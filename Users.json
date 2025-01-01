@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "username": "ilyes",
+            "password": "07936b6566cc31f8760cf87d914f192dc2ac66e5b761525054082476639fa404",
+            "exam_results": [
+                {
+                    "module": "exam2",
+                    "score": 11,
+                    "date": "2025-01-01"
+                },
+                {
+                    "module": "exam2",
+                    "score": 11,
+                    "date": "2025-01-01"
+                }
+            ]
+        }
+    ]
+}
