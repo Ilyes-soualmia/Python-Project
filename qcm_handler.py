@@ -1,6 +1,6 @@
 import json 
 
-temp_dect = {'question1':'','question2':'','question3':'','question4':'','question5':'','question6':'','question7':'','question8':'','question9':'','question10':''}
+temp_dect = {'question1':'','question2':'','question3':'','question4':'','question5':'','question6':'','question7':'','question8':'','question9':'','question10':'','question11':'','question12':'','question13':'','question14':'','question15':'','question16':'','question17':'','question18':'','question19':'','question20':''}
 
 # Load the data from the json file
 def load_data():
@@ -10,9 +10,7 @@ def load_data():
 
 # Welcome function
 def welcome():
-    print("Welcome to the quiz game!")
-    name = input("Please enter your name: ")
-    return name
+    print(f"{'*' * 15}Welcome to the quiz game!{'*' * 15}")
 # choose subject function
 def choose_subject():
     subject = input("Choose a subject: ")
