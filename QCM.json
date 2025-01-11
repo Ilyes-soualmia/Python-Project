@@ -1,462 +1,488 @@
 {
     "exams": [
       {
-        "subject": "Analyse",
-        "name":"ANL1",
+        "subject": "Analysis",
+        "name": "ANL1",
         "questions": [
           {
-            "nbr" : 1,
-            "question": "Résoudre l'intégrale suivante : ∫(2x^3 - 5x^2 + 3x - 7) dx.",
+            "nbr": 1,
+            "question": "Solve the following integral: ∫(2x^3 - 5x^2 + 3x - 7) dx.",
             "options": [
-                         "2x^2 - 5x + C",
-                         "x^3 - 5x^2 + 3x + C",
-                         "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-                         "x^4 + 5x^2 + C"
-                        ],
-         "correct_answer": "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-         "correct_letter": "c",
-         "points": 1,
-         "type": "easy",
-         "hint": "no-hint"
-
-          }, 
+              "2x^2 - 5x + C",
+              "x^3 - 5x^2 + 3x + C",
+              "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
+              "x^4 + 5x^2 + C"
+            ],
+            "correct_answer": "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
+            "correct_letter": "c",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+          },
           {
-            "nbr" : 2,
-            "question": "Calculer la limite de la fonction f(x) = (3x^2 - 2x + 1)/(x^2 - 4) lorsque x tend vers 2.",
+            "nbr": 2,
+            "question": "Calculate the limit of the function f(x) = (3x^2 - 2x + 1)/(x^2 - 4) as x approaches 2.",
             "options": [
-                         "1/4",
-                         "2",
-                         "∞", 
-                         "3/2"
-                        ],
+              "1/4",
+              "2",
+              "∞",
+              "3/2"
+            ],
             "correct_answer": "3/2",
             "correct_letter": "d",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
-
-
           },
           {
-            "nbr" : 3,
-            "question": "Étudier la dérivabilité de la fonction f(x) = |x^2 - 4| en x = 2.",
-            "options": ["Dérivable",
-                        "Non dérivable",
-                        "Dérivable seulement à droite",
-                        "Dérivable seulement à gauche"],
-            "correct_answer": "Non dérivable",
+            "nbr": 3,
+            "question": "Study the differentiability of the function f(x) = |x^2 - 4| at x = 2.",
+            "options": [
+              "Differentiable",
+              "Not differentiable",
+              "Differentiable only on the right",
+              "Differentiable only on the left"
+            ],
+            "correct_answer": "Not differentiable",
             "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
-
           },
           {
-            "nbr" : 4,
-            "question": "Résoudre l'équation différentielle : y'' + 4y = 0.",
-            "options": [ "y = C1 cos(2x) + C2 sin(2x)",
-                         "y = C1 e^2x + C2 e^-2x",
-                         "y = C1 sin(4x) + C2 cos(4x)",
-                         "y = C1 + C2x"],
+            "nbr": 4,
+            "question": "Solve the differential equation: y'' + 4y = 0.",
+            "options": [
+              "y = C1 cos(2x) + C2 sin(2x)",
+              "y = C1 e^2x + C2 e^-2x",
+              "y = C1 sin(4x) + C2 cos(4x)",
+              "y = C1 + C2x"
+            ],
             "correct_answer": "y = C1 cos(2x) + C2 sin(2x)",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 5,
-            "question": "Trouver le rayon de convergence de la série ∑ (x^n / n^2).",
-            "options": [ "∞",
-                         "1",
-                         "0",
-                         "1/2"],
+            "nbr": 5,
+            "question": "Find the radius of convergence of the series ∑ (x^n / n^2).",
+            "options": [
+              "∞",
+              "1",
+              "0",
+              "1/2"
+            ],
             "correct_answer": "1",
             "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
-          { 
-            "nbr" : 6,
-            "question": "Calculer la transformée de Laplace de f(t) = t^2 e^(-3t).",
-            "options": [ "t^2 + 3t",
-                         "1/(s+2)^2",
-                         "6/(s+3)^4",
-                         "2/(s+3)^3"],
+          {
+            "nbr": 6,
+            "question": "Calculate the Laplace transform of f(t) = t^2 e^(-3t).",
+            "options": [
+              "t^2 + 3t",
+              "1/(s+2)^2",
+              "6/(s+3)^4",
+              "2/(s+3)^3"
+            ],
             "correct_answer": "2/(s+3)^3",
             "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 7,
-            "question": "Résoudre le système d'équations différentielles : dx/dt = 3x + y, dy/dt = -x + 4y.",
-            "options": [  "Solutions oscillantes",
-                          "Solutions exponentielles",
-                          "Solutions logarithmiques",
-                          "Solutions paraboliques"],
-            "correct_answer": "Solutions exponentielles",
+            "nbr": 7,
+            "question": "Solve the system of differential equations: dx/dt = 3x + y, dy/dt = -x + 4y.",
+            "options": [
+              "Oscillatory solutions",
+              "Exponential solutions",
+              "Logarithmic solutions",
+              "Parabolic solutions"
+            ],
+            "correct_answer": "Exponential solutions",
             "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 8,
-            "question": "Étudier la continuité de la fonction f(x) = 1/(x-3) en x = 3.",
-            "options": [ "Continue",
-                         "Discontinue",
-                         "Non définie",
-                         "Continue à droite uniquement"],
-            "correct_answer": "Non définie",
+            "nbr": 8,
+            "question": "Study the continuity of the function f(x) = 1/(x-3) at x = 3.",
+            "options": [
+              "Continuous",
+              "Discontinuous",
+              "Undefined",
+              "Right-continuous only"
+            ],
+            "correct_answer": "Undefined",
             "correct_letter": "c",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 9,
-            "question": "Résoudre l'intégrale impropre ∫(1/x) dx de 1 à ∞.",
-            "options": [ "∞",
-                         "0",
-                         "1",
-                         "-∞"],
+            "nbr": 9,
+            "question": "Solve the improper integral ∫(1/x) dx from 1 to ∞.",
+            "options": [
+              "∞",
+              "0",
+              "1",
+              "-∞"
+            ],
             "correct_answer": "∞",
             "correct_letter": "a",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
-
           },
-          
           {
-            "nbr" : 10,
-            "question": "Résoudre l'équation de chaleur : u_t = k u_xx.",
-            "options": [ "Solution logarithmique",
-                         "Solution exponentielle",
-                         "Solution de Fourier",
-                         "Solution polynomial"],
-            "correct_answer": "Solution de Fourier",
+            "nbr": 10,
+            "question": "Solve the heat equation: u_t = k u_xx.",
+            "options": [
+              "Logarithmic solution",
+              "Exponential solution",
+              "Fourier solution",
+              "Polynomial solution"
+            ],
+            "correct_answer": "Fourier solution",
             "correct_letter": "c",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
-
           }
         ]
       },
       {
-        "subject": "Algebre",
-        "name":"ALG1",
+        "subject": "Algebra",
+        "name": "ALG1",
         "questions": [
           {
-            "nbr" : 1,
-            "question": "Trouver les valeurs propres de la matrice A = [[2, -1], [-1, 2]].",
-            "options": [ "2 et 4",
-                         "1 et 3",
-                         "0 et 3",
-                         "1 et 2"],
-            "correct_answer": "1 et 3",
+            "nbr": 1,
+            "question": "Find the eigenvalues of the matrix A = [[2, -1], [-1, 2]].",
+            "options": [
+              "2 and 4",
+              "1 and 3",
+              "0 and 3",
+              "1 and 2"
+            ],
+            "correct_answer": "1 and 3",
             "correct_letter": "b",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 2,
-            "question": "Résoudre le système d'équations linéaires : 3x + 2y = 5 et 2x - y = 3.",
-            "options": [ "x = 1,y = 1",
-                         "x = 2, y = 1",
-                         "x = -1, y = 2",
-                         "x = 0, y = 1"],
+            "nbr": 2,
+            "question": "Solve the system of linear equations: 3x + 2y = 5 and 2x - y = 3.",
+            "options": [
+              "x = 1, y = 1",
+              "x = 2, y = 1",
+              "x = -1, y = 2",
+              "x = 0, y = 1"
+            ],
             "correct_answer": "x = 1, y = 1",
             "correct_letter": "a",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 3,
-            "question": "Calculer le déterminant de la matrice A = [[1, 2], [3, 4]].",
-            "options": [ "2",
-                         "1",
-                         "0",
-                         "-2"],
+            "nbr": 3,
+            "question": "Calculate the determinant of the matrix A = [[1, 2], [3, 4]].",
+            "options": [
+              "2",
+              "1",
+              "0",
+              "-2"
+            ],
             "correct_answer": "-2",
             "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
-
           },
           {
-            "nbr" : 4,
-            "question": "Vérifier si le vecteur v = [1, 1] est dans l'espace engendré par les vecteurs u = [1, 0] et w = [0, 1].",
-            "options": ["Oui", "Non", "Inconnu", "Dépend du scalaire"],
-            "correct_answer": "Oui",
+            "nbr": 4,
+            "question": "Verify if the vector v = [1, 1] is in the space spanned by the vectors u = [1, 0] and w = [0, 1].",
+            "options": [
+              "Yes",
+              "No",
+              "Unknown",
+              "Depends on the scalar"
+            ],
+            "correct_answer": "Yes",
             "correct_letter": "a",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
           },
           {
-            "nbr" : 5,
-            "question": "Calculer la norme du vecteur u = [3, 4].",
-            "options": [ "3",
-                         "7",
-                         "5",
-                         "4"],
+            "nbr": 5,
+            "question": "Calculate the norm of the vector u = [3, 4].",
+            "options": [
+              "3",
+              "7",
+              "5",
+              "4"
+            ],
             "correct_answer": "5",
             "correct_letter": "c",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 6,
-            "question": "Trouver le produit scalaire des vecteurs u = [1, 2] et v = [2, 3].",
-            "options": [ "8",
-                         "7",
-                         "6",
-                         "5"],
+            "nbr": 6,
+            "question": "Find the dot product of the vectors u = [1, 2] and v = [2, 3].",
+            "options": [
+              "8",
+              "7",
+              "6",
+              "5"
+            ],
             "correct_answer": "8",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 7,
-            "question": "Calculer le rang de la matrice A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
-            "options": [ "3",
-                         "2",
-                         "1",
-                         "0"],
+            "nbr": 7,
+            "question": "Calculate the rank of the matrix A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "0"
+            ],
             "correct_answer": "2",
             "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 8,
-            "question": "Résoudre l'équation caractéristique de la matrice A = [[2, 1], [1, 2]].",
-            "options": [ "λ^2 - 2λ + 1 = 0",
-                         "λ^2 - 4λ + 3 = 0",
-                         "λ^2 - 5λ + 6 = 0",
-                         "λ^2 - 3λ + 2 = 0"],
+            "nbr": 8,
+            "question": "Solve the characteristic equation of the matrix A = [[2, 1], [1, 2]].",
+            "options": [
+              "λ^2 - 2λ + 1 = 0",
+              "λ^2 - 4λ + 3 = 0",
+              "λ^2 - 5λ + 6 = 0",
+              "λ^2 - 3λ + 2 = 0"
+            ],
             "correct_answer": "λ^2 - 3λ + 2 = 0",
             "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 9,
-            "question": "Déterminer si la matrice A = [[2, 0], [0, 2]] est diagonalisable.",
-            "options": [ "Oui",
-                         "Non",
-                         "Dépend des vecteurs propres",
-                         "Inconnu"],
-            "correct_answer": "Oui",
+            "nbr": 9,
+            "question": "Determine if the matrix A = [[2, 0], [0, 2]] is diagonalizable.",
+            "options": [
+              "Yes",
+              "No",
+              "Depends on the eigenvectors",
+              "Unknown"
+            ],
+            "correct_answer": "Yes",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 10,
-            "question": "Calculer le produit matriciel de A = [[1, 2], [3, 4]] et B = [[2, 0], [1, 2]].",
-            "options": [ ["4, 4"],
-                         ["7, 8"],
-                         ["8, 8"],
-                         ["5, 4"]],
+            "nbr": 10,
+            "question": "Calculate the matrix product of A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 2]].",
+            "options": [
+              ["4, 4"],
+              ["7, 8"],
+              ["8, 8"],
+              ["5, 4"]
+            ],
             "correct_answer": [["4, 4"], ["7, 8"]],
             "correct_letter": "a",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 11,
-            "question": "Trouver les vecteurs propres de la matrice A = [[3, 1], [0, 3]].",
-            "options": [ "[1, 0]",
-                         "[0, 1]",
-                         "[1, 1]",
-                         "[3, 1]"],
+            "nbr": 11,
+            "question": "Find the eigenvectors of the matrix A = [[3, 1], [0, 3]].",
+            "options": [
+              "[1, 0]",
+              "[0, 1]",
+              "[1, 1]",
+              "[3, 1]"
+            ],
             "correct_answer": "[1, 0]",
             "correct_letter": "a",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
-
           }
         ]
       },
       {
-        "subject": "Base de Données",
-        "name":"BDD1",
+        "subject": "Database",
+        "name": "BDD1",
         "questions": [
           {
-            "nbr" : 1,
-            "question": "Quelle est la clé primaire d'une base de données relationnelle ?",
-            "options": [ "Un attribut unique",
-                         "Un ensemble de colonnes",
-                         "Une contrainte",
-                         "Un identifiant"],
-            "correct_answer": "Un attribut unique",
+            "nbr": 1,
+            "question": "What is the primary key in a relational database?",
+            "options": [
+              "A unique attribute",
+              "A set of columns",
+              "A constraint",
+              "An identifier"
+            ],
+            "correct_answer": "A unique attribute",
             "correct_letter": "a",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 2,
-            "question": "Qu'est-ce qu'une clé étrangère dans un schéma relationnel ?",
-            "options": [ "Un attribut lié à la clé primaire",
-                         "Une contrainte",
-                         "Une référence à un autre tableau",
-                         "Un type de colonne"],
-            "correct_answer": "Une référence à un autre tableau",
+            "nbr": 2,
+            "question": "What is a foreign key in a relational schema?",
+            "options": [
+              "An attribute linked to the primary key",
+              "A constraint",
+              "A reference to another table",
+              "A type of column"
+            ],
+            "correct_answer": "A reference to another table",
             "correct_letter": "a",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 3,
-            "question": "Quel est le rôle de l'opération JOIN en SQL ?",
-            "options": [ "Combiner des lignes de plusieurs tables",
-                         "Sélectionner des colonnes",
-                         "Ajouter des données",
-                         "Supprimer des données"],
-            "correct_answer": "Combiner des lignes de plusieurs tables",
+            "nbr": 3,
+            "question": "What is the role of the JOIN operation in SQL?",
+            "options": [
+              "Combine rows from multiple tables",
+              "Select columns",
+              "Add data",
+              "Delete data"
+            ],
+            "correct_answer": "Combine rows from multiple tables",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 4,
-            "question": "Quelle est la forme normale qui élimine les dépendances fonctionnelles partielles ?",
-            "options": [ "2NF",
-                         "3NF",
-                         "1NF",
-                         "BCNF"],
+            "nbr": 4,
+            "question": "Which normal form eliminates partial functional dependencies?",
+            "options": [
+              "2NF",
+              "3NF",
+              "1NF",
+              "BCNF"
+            ],
             "correct_answer": "2NF",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 5,
-            "question": "Quelle est l'instruction SQL pour supprimer une table ?",
-            "options": [ "DROP TABLE",
-                         "DELETE TABLE",
-                         "REMOVE TABLE",
-                         "ERASE TABLE"],
+            "nbr": 5,
+            "question": "What is the SQL statement to delete a table?",
+            "options": [
+              "DROP TABLE",
+              "DELETE TABLE",
+              "REMOVE TABLE",
+              "ERASE TABLE"
+            ],
             "correct_answer": "DROP TABLE",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 6,
-            "question": "Comment créer une nouvelle base de données en SQL ?",
-            "options": [ "CREATE DATABASE",
-                         "NEW DATABASE",
-                         "MAKE DATABASE",
-                         "INSERT DATABASE"],
+            "nbr": 6,
+            "question": "How do you create a new database in SQL?",
+            "options": [
+              "CREATE DATABASE",
+              "NEW DATABASE",
+              "MAKE DATABASE",
+              "INSERT DATABASE"
+            ],
             "correct_answer": "CREATE DATABASE",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 7,
-            "question": "Comment insérer des données dans une table SQL ?",
-            "options": [ "INSERT INTO",
-                         "ADD DATA",
-                         "INSERT DATA",
-                         "APPEND DATA"],
+            "nbr": 7,
+            "question": "How do you insert data into an SQL table?",
+            "options": [
+              "INSERT INTO",
+              "ADD DATA",
+              "INSERT DATA",
+              "APPEND DATA"
+            ],
             "correct_answer": "INSERT INTO",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
-         
           {
-            "nbr" : 8,
-            "question": "Quelle est la syntaxe correcte pour créer une clé étrangère en SQL ?",
-            "options": [ "FOREIGN KEY REFERENCES",
-                         "FOREIGN KEY ->",
-                         "REFERENCE FOREIGN",
-                         "LINK FOREIGN"],
+            "nbr": 8,
+            "question": "What is the correct syntax to create a foreign key in SQL?",
+            "options": [
+              "FOREIGN KEY REFERENCES",
+              "FOREIGN KEY ->",
+              "REFERENCE FOREIGN",
+              "LINK FOREIGN"
+            ],
             "correct_answer": "FOREIGN KEY REFERENCES",
             "correct_letter": "a",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
-
           },
           {
-            "nbr" : 9,
-            "question": "Qu'est-ce qu'une transaction en base de données ?",
-            "options": [ "Un ensemble d'opérations exécutées de manière atomique",
-                         "Une mise à jour",
-                         "Un transfert de données",
-                         "Une lecture de données"],
-            "correct_answer": "Un ensemble d'opérations exécutées de manière atomique",
+            "nbr": 9,
+            "question": "What is a transaction in a database?",
+            "options": [
+              "A set of operations executed atomically",
+              "An update",
+              "A data transfer",
+              "A data read"
+            ],
+            "correct_answer": "A set of operations executed atomically",
             "correct_letter": "a",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
-
           },
-         
           {
-            "nbr" : 10,
-            "question": "Quelle est l'instruction pour mettre à jour des données dans une table SQL ?",
-            "options": [ "UPDATE",
-                         "MODIFY",
-                         "CHANGE",
-                         "ALTER"],
+            "nbr": 10,
+            "question": "What is the statement to update data in an SQL table?",
+            "options": [
+              "UPDATE",
+              "MODIFY",
+              "CHANGE",
+              "ALTER"
+            ],
             "correct_answer": "UPDATE",
             "correct_letter": "a",
             "points": 3,
-            "type": "deficult",
+            "type": "difficult",
             "hint": "no-hint"
           }
         ]
-      }
+      }      
     ]
   }
   
