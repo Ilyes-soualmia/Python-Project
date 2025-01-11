@@ -2,19 +2,19 @@
     "exams": [
       {
         "subject": "Analyse",
-        "name":"exam1",
+        "name":"ANL1",
         "questions": [
           {
             "nbr" : 1,
             "question": "Résoudre l'intégrale suivante : ∫(2x^3 - 5x^2 + 3x - 7) dx.",
             "options": [
-                         "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-                         "x^3 - 5x^2 + 3x + C",
                          "2x^2 - 5x + C",
+                         "x^3 - 5x^2 + 3x + C",
+                         "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
                          "x^4 + 5x^2 + C"
                         ],
          "correct_answer": "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-         "correct_letter": "a",
+         "correct_letter": "c",
          "points": 1,
          "type": "easy",
          "hint": "no-hint"
@@ -30,7 +30,7 @@
                          "3/2"
                         ],
             "correct_answer": "3/2",
-            "correct_letter": "a",
+            "correct_letter": "d",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
@@ -45,7 +45,7 @@
                         "Dérivable seulement à droite",
                         "Dérivable seulement à gauche"],
             "correct_answer": "Non dérivable",
-            "correct_letter": "a",
+            "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -69,12 +69,12 @@
           {
             "nbr" : 5,
             "question": "Trouver le rayon de convergence de la série ∑ (x^n / n^2).",
-            "options": [ "1",
-                         "∞",
+            "options": [ "∞",
+                         "1",
                          "0",
                          "1/2"],
             "correct_answer": "1",
-            "correct_letter": "a",
+            "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -83,12 +83,12 @@
           { 
             "nbr" : 6,
             "question": "Calculer la transformée de Laplace de f(t) = t^2 e^(-3t).",
-            "options": [ "2/(s+3)^3",
+            "options": [ "t^2 + 3t",
                          "1/(s+2)^2",
                          "6/(s+3)^4",
-                         "t^2 + 3t"],
+                         "2/(s+3)^3"],
             "correct_answer": "2/(s+3)^3",
-            "correct_letter": "a",
+            "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -102,7 +102,7 @@
                           "Solutions logarithmiques",
                           "Solutions paraboliques"],
             "correct_answer": "Solutions exponentielles",
-            "correct_letter": "a",
+            "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -116,7 +116,7 @@
                          "Non définie",
                          "Continue à droite uniquement"],
             "correct_answer": "Non définie",
-            "correct_letter": "a",
+            "correct_letter": "c",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -140,12 +140,12 @@
           {
             "nbr" : 10,
             "question": "Résoudre l'équation de chaleur : u_t = k u_xx.",
-            "options": [ "Solution de Fourier",
+            "options": [ "Solution logarithmique",
                          "Solution exponentielle",
-                         "Solution logarithmique",
+                         "Solution de Fourier",
                          "Solution polynomial"],
             "correct_answer": "Solution de Fourier",
-            "correct_letter": "a",
+            "correct_letter": "c",
             "points": 3,
             "type": "deficult",
             "hint": "no-hint"
@@ -155,17 +155,17 @@
       },
       {
         "subject": "Algebre",
-        "name":"exam2",
+        "name":"ALG1",
         "questions": [
           {
             "nbr" : 1,
             "question": "Trouver les valeurs propres de la matrice A = [[2, -1], [-1, 2]].",
-            "options": [ "1 et 3",
-                         "2 et 4",
+            "options": [ "2 et 4",
+                         "1 et 3",
                          "0 et 3",
                          "1 et 2"],
             "correct_answer": "1 et 3",
-            "correct_letter": "a",
+            "correct_letter": "b",
             "points": 1,
             "type": "easy",
             "hint": "no-hint"
@@ -188,12 +188,12 @@
           {
             "nbr" : 3,
             "question": "Calculer le déterminant de la matrice A = [[1, 2], [3, 4]].",
-            "options": [ "-2",
+            "options": [ "2",
                          "1",
                          "0",
-                         "2"],
+                         "-2"],
             "correct_answer": "-2",
-            "correct_letter": "a",
+            "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -213,12 +213,12 @@
           {
             "nbr" : 5,
             "question": "Calculer la norme du vecteur u = [3, 4].",
-            "options": [ "5",
+            "options": [ "3",
                          "7",
-                         "3",
+                         "5",
                          "4"],
             "correct_answer": "5",
-            "correct_letter": "a",
+            "correct_letter": "c",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -241,12 +241,12 @@
           {
             "nbr" : 7,
             "question": "Calculer le rang de la matrice A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
-            "options": [ "2",
-                         "3",
+            "options": [ "3",
+                         "2",
                          "1",
                          "0"],
             "correct_answer": "2",
-            "correct_letter": "a",
+            "correct_letter": "b",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -255,12 +255,12 @@
           {
             "nbr" : 8,
             "question": "Résoudre l'équation caractéristique de la matrice A = [[2, 1], [1, 2]].",
-            "options": [ "λ^2 - 3λ + 2 = 0",
+            "options": [ "λ^2 - 2λ + 1 = 0",
                          "λ^2 - 4λ + 3 = 0",
                          "λ^2 - 5λ + 6 = 0",
-                         "λ^2 - 2λ + 1 = 0"],
+                         "λ^2 - 3λ + 2 = 0"],
             "correct_answer": "λ^2 - 3λ + 2 = 0",
-            "correct_letter": "a",
+            "correct_letter": "d",
             "points": 2,
             "type": "medium",
             "hint": "no-hint"
@@ -312,7 +312,7 @@
       },
       {
         "subject": "Base de Données",
-        "name":"exam3",
+        "name":"BDD1",
         "questions": [
           {
             "nbr" : 1,
