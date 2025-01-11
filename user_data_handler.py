@@ -1,8 +1,14 @@
+from rich.table import Table
+from rich.panel import Panel
+from rich.text import Text
+from rich.console import Console
+from rich.prompt import Prompt
 import json
 import hashlib
 from datetime import datetime
 import os
 
+console = Console()
 # Utility functions
 def load_json(file_path, default_data):
     """Load data from a JSON file, creating it if it doesn't exist."""
@@ -41,21 +47,22 @@ def save_history(history):
 # Core functionality
 def login():
     users = load_users()
-    username = input("Enter your username: ")
-    password = input("Enter your password: ")
+    username = Prompt.ask("[bold cyan]Enter your name[/bold cyan]")
+    password = Prompt.ask("[bold cyan]Enter your password[/bold cyan]")
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
     for user in users['users']:
         if user['username'] == username and user['password'] == hashed_password:
-            print("Login successful!")
+            console.print("[bold green]Login successful![/bold green]")
             return username
-    print("User not found. Creating new user...")
+    console.print("[red]User not found.[/red]")
+    console.print("[blue]Creating new user...[/blue]")
     users['users'].append({
         "username": username,
         "password": hashed_password,
         "exam_results": []
     })
     save_users(users)
-    print("User created successfully!")
+    console.print("[bold green]User created successfully![/bold green]")
     return username
 
 def record_exam_result(username, module, score):

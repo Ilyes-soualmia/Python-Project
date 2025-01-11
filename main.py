@@ -1,9 +1,18 @@
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich.text import Text
 import json
 import qcm_handler as qcm
 import user_data_handler as udh
 
 # Main function
 data = qcm.load_data()
+
+console = Console()
+message = Text("Welcome, that's me the best QCM APP! 👍", justify="center", style="bold magenta")
+console.print(message)
+print(2*"\n")
 
 username = udh.login()
 name = qcm.welcome()
