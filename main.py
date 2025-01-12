@@ -10,7 +10,8 @@ import user_data_handler as udh
 data = qcm.load_data()
 
 console = Console()
-message = Text("Welcome, that's me the best QCM APP! 👍", justify="center", style="bold magenta")
+console.print("QUIZZY 🤖", style="bold red")
+message = Text("Welcome to the best QCM APP! 👍", justify="center", style="bold magenta")
 console.print(message)
 print(2*"\n")
 
@@ -19,9 +20,12 @@ name = qcm.welcome()
 
 if username:
     while True:
-        print("1. Take an exam")
-        print("2. View exam history")
-        print("3. Logout")
+        console.print("[bold cyan]1. Take an exam[/bold cyan]")
+        console.print("[bold cyan]2. View exam history[/bold cyan]")
+        console.print("[bold cyan]3. Logout[/bold cyan]")
+        #print("1. Take an exam")
+        #print("2. View exam history")
+        #print("3. Logout")
         choice = input("Enter your choice: ")
         if choice == '1':
             subject = qcm.choose_subject()
@@ -30,19 +34,18 @@ if username:
             udh.record_exam_result(username, exam_name, result)
             
             #print result and correct answers
-            print(f"Your result is: {result} / 10")
+            print(f"Your result is: {result} / 20")
             for key, value in qcm.temp_dect.items():
                 if value:                       #if value is not empty 
                     print(f'{key}: {value}')
                 else:                           #if value is empty, like it was the last question
                     break
-
         elif choice == '2':
             udh.view_exam_history(username)
         elif choice == '3':
             break
         else:
-            print("Invalid choice. Please try again.")
+            console.print("Invalid choice. Please try again.", style="bold red")
         
     
 

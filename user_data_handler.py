@@ -51,9 +51,13 @@ def login():
     password = Prompt.ask("[bold cyan]Enter your password[/bold cyan]")
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
     for user in users['users']:
-        if user['username'] == username and user['password'] == hashed_password:
-            console.print("[bold green]Login successful![/bold green]")
-            return username
+        if user['username'] == username:
+            if user['password'] == hashed_password:
+                console.print("[bold green]Login successful![/bold green]")
+                return username
+            else:
+                console.print("[red]Username already exists , and password is wrong[/red]")
+                return login()
     console.print("[red]User not found.[/red]")
     console.print("[blue]Creating new user...[/blue]")
     users['users'].append({
@@ -91,14 +95,23 @@ def log_exam_history(username, module, score):
         "date": current_time
     })
     save_history(history)
-    print(f"Exam history recorded for {username}: {module} - {score} on {current_time}")
+    #print(f"Exam history recorded for {username}: {module} - {score} on {current_time}")
+    console.print("[bold blue]Exam history recorded successfully![/bold blue] for {username} : {module} - {score} on {current_time}")
 
 def view_exam_history(username):
     history = load_history()
     user_history = [entry for entry in history['history'] if entry['username'] == username]
     if user_history:
-        print(f"Exam history for {username}:")
+        #print(f"Exam history for {username}:")
+        table = Table(show_header=True, header_style="bold magenta")
+        table.add_column("Module", style="bold cyan")
+        table.add_column("Score /20", style="bold cyan")
+        table.add_column("Date", style="bold cyan")
         for entry in user_history:
-            print(f"Module: {entry['module']}, Score: {entry['score']}, Date: {entry['date']}")
+            #print(f"Module: {entry['module']}, Score: {entry['score']}, Date: {entry['date']}")
+            table.add_row(entry['module'], str(entry['score']), entry['date'])
+        console.print(f"[bold blue]Exam history for {username}:[/bold blue]")    
+        console.print(table)
     else:
-        print(f"No exam history found for {username}.")
+        #print(f"No exam history found for {username}.")
+        console.print("[blue]You have not taken any exams yet.[/blue]")
