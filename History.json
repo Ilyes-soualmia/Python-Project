@@ -5,6 +5,12 @@
             "module": "exam2",
             "score": 11,
             "date": "2025-01-01 20:35:12"
+        },
+        {
+            "username": "ilyes",
+            "module": "ALG1",
+            "score": 12,
+            "date": "2025-01-11 23:56:17"
         }
     ]
 }
