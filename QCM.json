@@ -1,695 +1,945 @@
 {
-    "exams": [
-      {
-        "subject": "Analysis",
-        "name": "ANL1",
-        "questions": [
-          {
-            "nbr": 1,
-            "question": "Solve the following integral: ∫(2x^3 - 5x^2 + 3x - 7) dx.",
-            "options": [
-              "2x^2 - 5x + C",
-              "x^3 - 5x^2 + 3x + C",
-              "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-              "x^4 + 5x^2 + C"
-            ],
-            "correct_answer": "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
-            "correct_letter": "c",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 2,
-            "question": "Calculate the limit of the function f(x) = (3x^2 - 2x + 1)/(x^2 - 4) as x approaches 2.",
-            "options": ["1/4", "2", "∞", "3/2"],
-            "correct_answer": "3/2",
-            "correct_letter": "d",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 3,
-            "question": "Study the differentiability of the function f(x) = |x^2 - 4| at x = 2.",
-            "options": [
-              "Differentiable",
-              "Not differentiable",
-              "Differentiable only on the right",
-              "Differentiable only on the left"
-            ],
-            "correct_answer": "Not differentiable",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 4,
-            "question": "Solve the differential equation: y'' + 4y = 0.",
-            "options": [
-              "y = C1 cos(2x) + C2 sin(2x)",
-              "y = C1 e^2x + C2 e^-2x",
-              "y = C1 sin(4x) + C2 cos(4x)",
-              "y = C1 + C2x"
-            ],
-            "correct_answer": "y = C1 cos(2x) + C2 sin(2x)",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 5,
-            "question": "Find the radius of convergence of the series ∑ (x^n / n^2).",
-            "options": ["∞", "1", "0", "1/2"],
-            "correct_answer": "1",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 6,
-            "question": "Calculate the Laplace transform of f(t) = t^2 e^(-3t).",
-            "options": ["t^2 + 3t", "1/(s+2)^2", "6/(s+3)^4", "2/(s+3)^3"],
-            "correct_answer": "2/(s+3)^3",
-            "correct_letter": "d",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 7,
-            "question": "Solve the system of differential equations: dx/dt = 3x + y, dy/dt = -x + 4y.",
-            "options": [
-              "Oscillatory solutions",
-              "Exponential solutions",
-              "Logarithmic solutions",
-              "Parabolic solutions"
-            ],
-            "correct_answer": "Exponential solutions",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 8,
-            "question": "Study the continuity of the function f(x) = 1/(x-3) at x = 3.",
-            "options": [
-              "Continuous",
-              "Discontinuous",
-              "Undefined",
-              "Right-continuous only"
-            ],
-            "correct_answer": "Undefined",
-            "correct_letter": "c",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 9,
-            "question": "Solve the improper integral ∫(1/x) dx from 1 to ∞.",
-            "options": ["∞", "0", "1", "-∞"],
-            "correct_answer": "∞",
-            "correct_letter": "a",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 10,
-            "question": "Solve the heat equation: u_t = k u_xx.",
-            "options": [
-              "Logarithmic solution",
-              "Exponential solution",
-              "Fourier solution",
-              "Polynomial solution"
-            ],
-            "correct_answer": "Fourier solution",
-            "correct_letter": "c",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          }
-        ]
-      },
-      {
-        "subject": "Algebra",
-        "name": "ALG1",
-        "questions": [
-          {
-            "nbr": 1,
-            "question": "Find the eigenvalues of the matrix A = [[2, -1], [-1, 2]].",
-            "options": ["2 and 4", "1 and 3", "0 and 3", "1 and 2"],
-            "correct_answer": "1 and 3",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 2,
-            "question": "Solve the system of linear equations: 3x + 2y = 5 and 2x - y = 3.",
-            "options": [
-              "x = 1, y = 1",
-              "x = 2, y = 1",
-              "x = -1, y = 2",
-              "x = 0, y = 1"
-            ],
-            "correct_answer": "x = 1, y = 1",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 3,
-            "question": "Calculate the determinant of the matrix A = [[1, 2], [3, 4]].",
-            "options": ["2", "1", "0", "-2"],
-            "correct_answer": "-2",
-            "correct_letter": "d",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 4,
-            "question": "Verify if the vector v = [1, 1] is in the space spanned by the vectors u = [1, 0] and w = [0, 1].",
-            "options": ["Yes", "No", "Unknown", "Depends on the scalar"],
-            "correct_answer": "Yes",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 5,
-            "question": "Calculate the norm of the vector u = [3, 4].",
-            "options": ["3", "7", "5", "4"],
-            "correct_answer": "5",
-            "correct_letter": "c",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 6,
-            "question": "Find the dot product of the vectors u = [1, 2] and v = [2, 3].",
-            "options": ["8", "7", "6", "5"],
-            "correct_answer": "8",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 7,
-            "question": "Calculate the rank of the matrix A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
-            "options": ["3", "2", "1", "0"],
-            "correct_answer": "2",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 8,
-            "question": "Solve the characteristic equation of the matrix A = [[2, 1], [1, 2]].",
-            "options": [
-              "λ^2 - 2λ + 1 = 0",
-              "λ^2 - 4λ + 3 = 0",
-              "λ^2 - 5λ + 6 = 0",
-              "λ^2 - 3λ + 2 = 0"
-            ],
-            "correct_answer": "λ^2 - 3λ + 2 = 0",
-            "correct_letter": "d",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 9,
-            "question": "Determine if the matrix A = [[2, 0], [0, 2]] is diagonalizable.",
-            "options": ["Yes", "No", "Depends on the eigenvectors", "Unknown"],
-            "correct_answer": "Yes",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 10,
-            "question": "Calculate the matrix product of A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 2]].",
-            "options": [["4, 4"], ["7, 8"], ["8, 8"], ["5, 4"]],
-            "correct_answer": [["4, 4"], ["7, 8"]],
-            "correct_letter": "a",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 11,
-            "question": "Find the eigenvectors of the matrix A = [[3, 1], [0, 3]].",
-            "options": ["[1, 0]", "[0, 1]", "[1, 1]", "[3, 1]"],
-            "correct_answer": "[1, 0]",
-            "correct_letter": "a",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          }
-        ]
-      },
-  
-      {
-        "subject": "Database",
-        "name": "BDD1",
-        "questions": [
-          {
-            "nbr": 1,
-            "question": "What is the primary key in a relational database?",
-            "options": [
-              "A unique attribute",
-              "A set of columns",
-              "A constraint",
-              "An identifier"
-            ],
-            "correct_answer": "A unique attribute",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 2,
-            "question": "What is a foreign key in a relational schema?",
-            "options": [
-              "An attribute linked to the primary key",
-              "A constraint",
-              "A reference to another table",
-              "A type of column"
-            ],
-            "correct_answer": "A reference to another table",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 3,
-            "question": "What is the role of the JOIN operation in SQL?",
-            "options": [
-              "Combine rows from multiple tables",
-              "Select columns",
-              "Add data",
-              "Delete data"
-            ],
-            "correct_answer": "Combine rows from multiple tables",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 4,
-            "question": "Which normal form eliminates partial functional dependencies?",
-            "options": ["2NF", "3NF", "1NF", "BCNF"],
-            "correct_answer": "2NF",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 5,
-            "question": "What is the SQL statement to delete a table?",
-            "options": [
-              "DROP TABLE",
-              "DELETE TABLE",
-              "REMOVE TABLE",
-              "ERASE TABLE"
-            ],
-            "correct_answer": "DROP TABLE",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 6,
-            "question": "How do you create a new database in SQL?",
-            "options": [
-              "CREATE DATABASE",
-              "NEW DATABASE",
-              "MAKE DATABASE",
-              "INSERT DATABASE"
-            ],
-            "correct_answer": "CREATE DATABASE",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 7,
-            "question": "How do you insert data into an SQL table?",
-            "options": ["INSERT INTO", "ADD DATA", "INSERT DATA", "APPEND DATA"],
-            "correct_answer": "INSERT INTO",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 8,
-            "question": "What is the correct syntax to create a foreign key in SQL?",
-            "options": [
-              "FOREIGN KEY REFERENCES",
-              "FOREIGN KEY ->",
-              "REFERENCE FOREIGN",
-              "LINK FOREIGN"
-            ],
-            "correct_answer": "FOREIGN KEY REFERENCES",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 9,
-            "question": "What is a transaction in a database?",
-            "options": [
-              "A set of operations executed atomically",
-              "An update",
-              "A data transfer",
-              "A data read"
-            ],
-            "correct_answer": "A set of operations executed atomically",
-            "correct_letter": "a",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 10,
-            "question": "What is the statement to update data in an SQL table?",
-            "options": ["UPDATE", "MODIFY", "CHANGE", "ALTER"],
-            "correct_answer": "UPDATE",
-            "correct_letter": "a",
-            "points": 3,
-            "type": "difficult",
-            "hint": "no-hint"
-          }
-        ]
-      },
-      {
-        "subject": "OOP",
-        "name": "concepts",
-        "questions": [
-          {
-            "nbr": 1,
-            "question": "What does OOP stand for?",
-            "options": [
-              "Object-Oriented Programming",
-              "Organized Object Programming",
-              "Operation-Oriented Programming",
-              "Object-Oriented Process"
-            ],
-            "correct_answer": "Object-Oriented Programming",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 2,
-            "question": "What is a class in OOP?",
-            "options": [
-              " An instance of an object",
-              "A blueprint for creating objects",
-              "A method that performs an action",
-              "A variable that stores data"
-            ],
-            "correct_answer": "A blueprint for creating objects",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 3,
-            "question": "What is an object in OOP?",
-            "options": [
-              " A class definition",
-              "An instance of a class",
-              "A method that performs an action",
-              "A variable that stores data"
-            ],
-            "correct_answer": "An instance of a class",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 4,
-            "question": "What is a constructor?",
-            "options": [
-              " A method used to delete an object",
-              "A special method used to initialize objects",
-              "A method that returns values",
-              "A method used to access private variables"
-            ],
-            "correct_answer": "A special method used to initialize objects",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 5,
-            "question": "Which concept allows you to hide implementation details and show only functionality?",
-            "options": [
-              "  Inheritance",
-              "Abstraction",
-              "Inheritance",
-              "Encapsulation"
-            ],
-            "correct_answer": "Abstraction",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 6,
-            "question": " What is a destructor in OOP?",
-            "options": [
-              "   A function called to initialize an object",
-              "A method used for inheritance",
-              "A function called to destroy an object",
-              "A function for overloading operators"
-            ],
-            "correct_answer": "A function called to destroy an object",
-            "correct_letter": "c",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 7,
-            "question": " What is function overloading?",
-            "options": [
-              "Using the same function name with different parameters",
-              "Defining multiple classes with the same name",
-              "Assigning multiple return types to a single function",
-              "Using functions without parameters"
-            ],
-            "correct_answer": "Using the same function name with different parameters",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 8,
-            "question": " What is meant by overriding in OOP?",
-            "options": [
-              " Redefining a base class method in a derived class",
-              " Using the same name for multiple functions",
-              "Accessing private members of a class",
-              "Destroying an object"
-            ],
-            "correct_answer": "Redefining a base class method in a derived class",
-            "correct_letter": "a",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 9,
-            "question": "Which of the following languages use Object-Oriented Programming?",
-            "options": ["C++", " Java", "Python", "All of the above"],
-            "correct_answer": "All of the above",
-            "correct_letter": "d",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 10,
-            "question": "Which OOP concept involves creating a new class based on an existing class?",
-            "options": [
-              " Encapsulation",
-              " Abstraction",
-              "Inheritance",
-              "Polymorphism"
-            ],
-            "correct_answer": "Inheritance",
-            "correct_letter": "c",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 11,
-            "question": "What is the difference between an interface and an abstract class in OOP?",
-            "options": [
-              " An interface can have both abstract and concrete methods, while an abstract class can only have abstract methods",
-              "  An interface can only have abstract methods, while an abstract class can have both abstract and concrete methods",
-              "An interface is used for inheritance, while an abstract class is used for polymorphism",
-              " An interface is used for polymorphism, while an abstract class is used for inheritance"
-            ],
-            "correct_answer": "An interface can only have abstract methods, while an abstract class can have both abstract and concrete methods",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 12,
-            "question": "How does encapsulation contribute to code security in OOP?",
-            "options": [
-              "By exposing all data to external access",
-              "By hiding data and exposing methods, thus controlling access to data",
-              "By creating multiple objects from a single class",
-              "By overriding methods in child classes"
-            ],
-            "correct_answer": "By hiding data and exposing methods, thus controlling access to data",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 13,
-            "question": "What is the difference between a static method and an instance method in OOP?",
-            "options": [
-              "A static method belongs to a class and can be called without creating an instance, while an instance method belongs to an object and requires an instance to be called.",
-              "A static method belongs to an object and requires an instance to be called, while an instance method belongs to a class and can be called without creating an instance.",
-              "A static method is used for hiding data, while an instance method is used for exposing methods.",
-              "A static method is used for exposing methods, while an instance method is used for hiding data."
-            ],
-            "correct_answer": "A static method belongs to a class and can be called without creating an instance, while an instance method belongs to an object and requires an instance to be called.",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 14,
-            "question": "Which of the following is a correct way to create a class?",
-            "options": [
-              " class MyClass { } ",
-              "object MyClass { }",
-              "MyClass() { }",
-              " create class MyClass { }"
-            ],
-            "correct_answer": " class MyClass { } ",
-            "correct_letter": "a",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 15,
-            "question": " What does the 'super' keyword represent in Java?",
-            "options": [
-              "  Current class ",
-              "Parent class",
-              "Static method",
-              " Final method"
-            ],
-            "correct_answer": " Parent class ",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 16,
-            "question": " Which of the following keywords is used to prevent a class from being inherited?",
-            "options": ["  virtual ", "final", "const", " static"],
-            "correct_answer": " final ",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 17,
-            "question": "  What happens when a class is declared abstract?",
-            "options": [
-              "   It cannot have any methods or fields ",
-              "Objects of the class cannot be created, but it can be inherited",
-              "It must implement all of its methods immediately",
-              " It can be used as a standalone class for instantiation"
-            ],
-            "correct_answer": " Objects of the class cannot be created, but it can be inherited ",
-            "correct_letter": "b",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 18,
-            "question": "  Attributes of an object are also known as",
-            "options": ["   methods", " properties", "classes", " functions"],
-            "correct_answer": "properties",
-            "correct_letter": "b",
-            "points": 1,
-            "type": "easy",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 19,
-            "question": " What does the public access modifier allow in OOP?",
-            "options": [
-              "   Access only within the same package",
-              " Access only within the same class",
-              " Access from anywhere outside the class",
-              " Access only by subclasses"
-            ],
-            "correct_answer": "Access from anywhere outside the class",
-            "correct_letter": "c",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          },
-          {
-            "nbr": 20,
-            "question": "  Converting a primitive type data into its corresponding wrapper class object instance is called",
-            "options": ["   Boxing", "Wrapping", "Instantiation", " Autoboxing"],
-            "correct_answer": "Autoboxing",
-            "correct_letter": "d",
-            "points": 2,
-            "type": "medium",
-            "hint": "no-hint"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "exams": [
+    {
+      "subject": "Analysis",
+      "name": "ANL1",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "Solve the following integral: ∫(2x^3 - 5x^2 + 3x - 7) dx.",
+          "options": [
+            "2x^2 - 5x + C",
+            "x^3 - 5x^2 + 3x + C",
+            "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
+            "x^4 + 5x^2 + C"
+          ],
+          "correct_answer": "x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "Calculate the limit of the function f(x) = (3x^2 - 2x + 1)/(x^2 - 4) as x approaches 2.",
+          "options": ["1/4", "2", "∞", "3/2"],
+          "correct_answer": "3/2",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "Study the differentiability of the function f(x) = |x^2 - 4| at x = 2.",
+          "options": [
+            "Differentiable",
+            "Not differentiable",
+            "Differentiable only on the right",
+            "Differentiable only on the left"
+          ],
+          "correct_answer": "Not differentiable",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Solve the differential equation: y'' + 4y = 0.",
+          "options": [
+            "y = C1 cos(2x) + C2 sin(2x)",
+            "y = C1 e^2x + C2 e^-2x",
+            "y = C1 sin(4x) + C2 cos(4x)",
+            "y = C1 + C2x"
+          ],
+          "correct_answer": "y = C1 cos(2x) + C2 sin(2x)",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "Find the radius of convergence of the series ∑ (x^n / n^2).",
+          "options": ["∞", "1", "0", "1/2"],
+          "correct_answer": "1",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "Calculate the Laplace transform of f(t) = t^2 e^(-3t).",
+          "options": ["t^2 + 3t", "1/(s+2)^2", "6/(s+3)^4", "2/(s+3)^3"],
+          "correct_answer": "2/(s+3)^3",
+          "correct_letter": "d",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "Solve the system of differential equations: dx/dt = 3x + y, dy/dt = -x + 4y.",
+          "options": [
+            "Oscillatory solutions",
+            "Exponential solutions",
+            "Logarithmic solutions",
+            "Parabolic solutions"
+          ],
+          "correct_answer": "Exponential solutions",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "Study the continuity of the function f(x) = 1/(x-3) at x = 3.",
+          "options": [
+            "Continuous",
+            "Discontinuous",
+            "Undefined",
+            "Right-continuous only"
+          ],
+          "correct_answer": "Undefined",
+          "correct_letter": "c",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "Solve the improper integral ∫(1/x) dx from 1 to ∞.",
+          "options": ["∞", "0", "1", "-∞"],
+          "correct_answer": "∞",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "Solve the heat equation: u_t = k u_xx.",
+          "options": [
+            "Logarithmic solution",
+            "Exponential solution",
+            "Fourier solution",
+            "Polynomial solution"
+          ],
+          "correct_answer": "Fourier solution",
+          "correct_letter": "c",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "Algebra",
+      "name": "ALG1",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "Find the eigenvalues of the matrix A = [[2, -1], [-1, 2]].",
+          "options": ["2 and 4", "1 and 3", "0 and 3", "1 and 2"],
+          "correct_answer": "1 and 3",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "Solve the system of linear equations: 3x + 2y = 5 and 2x - y = 3.",
+          "options": [
+            "x = 1, y = 1",
+            "x = 2, y = 1",
+            "x = -1, y = 2",
+            "x = 0, y = 1"
+          ],
+          "correct_answer": "x = 1, y = 1",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "Calculate the determinant of the matrix A = [[1, 2], [3, 4]].",
+          "options": ["2", "1", "0", "-2"],
+          "correct_answer": "-2",
+          "correct_letter": "d",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Verify if the vector v = [1, 1] is in the space spanned by the vectors u = [1, 0] and w = [0, 1].",
+          "options": ["Yes", "No", "Unknown", "Depends on the scalar"],
+          "correct_answer": "Yes",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "Calculate the norm of the vector u = [3, 4].",
+          "options": ["3", "7", "5", "4"],
+          "correct_answer": "5",
+          "correct_letter": "c",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "Find the dot product of the vectors u = [1, 2] and v = [2, 3].",
+          "options": ["8", "7", "6", "5"],
+          "correct_answer": "8",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "Calculate the rank of the matrix A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+          "options": ["3", "2", "1", "0"],
+          "correct_answer": "2",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "Solve the characteristic equation of the matrix A = [[2, 1], [1, 2]].",
+          "options": [
+            "λ^2 - 2λ + 1 = 0",
+            "λ^2 - 4λ + 3 = 0",
+            "λ^2 - 5λ + 6 = 0",
+            "λ^2 - 3λ + 2 = 0"
+          ],
+          "correct_answer": "λ^2 - 3λ + 2 = 0",
+          "correct_letter": "d",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "Determine if the matrix A = [[2, 0], [0, 2]] is diagonalizable.",
+          "options": ["Yes", "No", "Depends on the eigenvectors", "Unknown"],
+          "correct_answer": "Yes",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "Calculate the matrix product of A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 2]].",
+          "options": [["4, 4"], ["7, 8"], ["8, 8"], ["5, 4"]],
+          "correct_answer": [["4, 4"], ["7, 8"]],
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Find the eigenvectors of the matrix A = [[3, 1], [0, 3]].",
+          "options": ["[1, 0]", "[0, 1]", "[1, 1]", "[3, 1]"],
+          "correct_answer": "[1, 0]",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
+      ]
+    },
+
+    {
+      "subject": "Database",
+      "name": "BDD1",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the primary key in a relational database?",
+          "options": [
+            "A unique attribute",
+            "A set of columns",
+            "A constraint",
+            "An identifier"
+          ],
+          "correct_answer": "A unique attribute",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is a foreign key in a relational schema?",
+          "options": [
+            "An attribute linked to the primary key",
+            "A constraint",
+            "A reference to another table",
+            "A type of column"
+          ],
+          "correct_answer": "A reference to another table",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the role of the JOIN operation in SQL?",
+          "options": [
+            "Combine rows from multiple tables",
+            "Select columns",
+            "Add data",
+            "Delete data"
+          ],
+          "correct_answer": "Combine rows from multiple tables",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Which normal form eliminates partial functional dependencies?",
+          "options": ["2NF", "3NF", "1NF", "BCNF"],
+          "correct_answer": "2NF",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the SQL statement to delete a table?",
+          "options": [
+            "DROP TABLE",
+            "DELETE TABLE",
+            "REMOVE TABLE",
+            "ERASE TABLE"
+          ],
+          "correct_answer": "DROP TABLE",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "How do you create a new database in SQL?",
+          "options": [
+            "CREATE DATABASE",
+            "NEW DATABASE",
+            "MAKE DATABASE",
+            "INSERT DATABASE"
+          ],
+          "correct_answer": "CREATE DATABASE",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "How do you insert data into an SQL table?",
+          "options": ["INSERT INTO", "ADD DATA", "INSERT DATA", "APPEND DATA"],
+          "correct_answer": "INSERT INTO",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "What is the correct syntax to create a foreign key in SQL?",
+          "options": [
+            "FOREIGN KEY REFERENCES",
+            "FOREIGN KEY ->",
+            "REFERENCE FOREIGN",
+            "LINK FOREIGN"
+          ],
+          "correct_answer": "FOREIGN KEY REFERENCES",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "What is a transaction in a database?",
+          "options": [
+            "A set of operations executed atomically",
+            "An update",
+            "A data transfer",
+            "A data read"
+          ],
+          "correct_answer": "A set of operations executed atomically",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "What is the statement to update data in an SQL table?",
+          "options": ["UPDATE", "MODIFY", "CHANGE", "ALTER"],
+          "correct_answer": "UPDATE",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "OOP",
+      "name": "concepts",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What does OOP stand for?",
+          "options": [
+            "Object-Oriented Programming",
+            "Organized Object Programming",
+            "Operation-Oriented Programming",
+            "Object-Oriented Process"
+          ],
+          "correct_answer": "Object-Oriented Programming",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is a class in OOP?",
+          "options": [
+            " An instance of an object",
+            "A blueprint for creating objects",
+            "A method that performs an action",
+            "A variable that stores data"
+          ],
+          "correct_answer": "A blueprint for creating objects",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is an object in OOP?",
+          "options": [
+            " A class definition",
+            "An instance of a class",
+            "A method that performs an action",
+            "A variable that stores data"
+          ],
+          "correct_answer": "An instance of a class",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is a constructor?",
+          "options": [
+            " A method used to delete an object",
+            "A special method used to initialize objects",
+            "A method that returns values",
+            "A method used to access private variables"
+          ],
+          "correct_answer": "A special method used to initialize objects",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "Which concept allows you to hide implementation details and show only functionality?",
+          "options": [
+            "  Inheritance",
+            "Abstraction",
+            "Inheritance",
+            "Encapsulation"
+          ],
+          "correct_answer": "Abstraction",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": " What is a destructor in OOP?",
+          "options": [
+            "   A function called to initialize an object",
+            "A method used for inheritance",
+            "A function called to destroy an object",
+            "A function for overloading operators"
+          ],
+          "correct_answer": "A function called to destroy an object",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": " What is function overloading?",
+          "options": [
+            "Using the same function name with different parameters",
+            "Defining multiple classes with the same name",
+            "Assigning multiple return types to a single function",
+            "Using functions without parameters"
+          ],
+          "correct_answer": "Using the same function name with different parameters",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": " What is meant by overriding in OOP?",
+          "options": [
+            " Redefining a base class method in a derived class",
+            " Using the same name for multiple functions",
+            "Accessing private members of a class",
+            "Destroying an object"
+          ],
+          "correct_answer": "Redefining a base class method in a derived class",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "Which of the following languages use Object-Oriented Programming?",
+          "options": ["C++", " Java", "Python", "All of the above"],
+          "correct_answer": "All of the above",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "Which OOP concept involves creating a new class based on an existing class?",
+          "options": [
+            " Encapsulation",
+            " Abstraction",
+            "Inheritance",
+            "Polymorphism"
+          ],
+          "correct_answer": "Inheritance",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "What is the difference between an interface and an abstract class in OOP?",
+          "options": [
+            " An interface can have both abstract and concrete methods, while an abstract class can only have abstract methods",
+            "  An interface can only have abstract methods, while an abstract class can have both abstract and concrete methods",
+            "An interface is used for inheritance, while an abstract class is used for polymorphism",
+            " An interface is used for polymorphism, while an abstract class is used for inheritance"
+          ],
+          "correct_answer": "An interface can only have abstract methods, while an abstract class can have both abstract and concrete methods",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "How does encapsulation contribute to code security in OOP?",
+          "options": [
+            "By exposing all data to external access",
+            "By hiding data and exposing methods, thus controlling access to data",
+            "By creating multiple objects from a single class",
+            "By overriding methods in child classes"
+          ],
+          "correct_answer": "By hiding data and exposing methods, thus controlling access to data",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "What is the difference between a static method and an instance method in OOP?",
+          "options": [
+            "A static method belongs to a class and can be called without creating an instance, while an instance method belongs to an object and requires an instance to be called.",
+            "A static method belongs to an object and requires an instance to be called, while an instance method belongs to a class and can be called without creating an instance.",
+            "A static method is used for hiding data, while an instance method is used for exposing methods.",
+            "A static method is used for exposing methods, while an instance method is used for hiding data."
+          ],
+          "correct_answer": "A static method belongs to a class and can be called without creating an instance, while an instance method belongs to an object and requires an instance to be called.",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "Which of the following is a correct way to create a class?",
+          "options": [
+            " class MyClass { } ",
+            "object MyClass { }",
+            "MyClass() { }",
+            " create class MyClass { }"
+          ],
+          "correct_answer": " class MyClass { } ",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": " What does the 'super' keyword represent in Java?",
+          "options": [
+            "  Current class ",
+            "Parent class",
+            "Static method",
+            " Final method"
+          ],
+          "correct_answer": " Parent class ",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": " Which of the following keywords is used to prevent a class from being inherited?",
+          "options": ["  virtual ", "final", "const", " static"],
+          "correct_answer": " final ",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "  What happens when a class is declared abstract?",
+          "options": [
+            "   It cannot have any methods or fields ",
+            "Objects of the class cannot be created, but it can be inherited",
+            "It must implement all of its methods immediately",
+            " It can be used as a standalone class for instantiation"
+          ],
+          "correct_answer": " Objects of the class cannot be created, but it can be inherited ",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "  Attributes of an object are also known as",
+          "options": ["   methods", " properties", "classes", " functions"],
+          "correct_answer": "properties",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": " What does the public access modifier allow in OOP?",
+          "options": [
+            "   Access only within the same package",
+            " Access only within the same class",
+            " Access from anywhere outside the class",
+            " Access only by subclasses"
+          ],
+          "correct_answer": "Access from anywhere outside the class",
+          "correct_letter": "c",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "  Converting a primitive type data into its corresponding wrapper class object instance is called",
+          "options": ["   Boxing", "Wrapping", "Instantiation", " Autoboxing"],
+          "correct_answer": "Autoboxing",
+          "correct_letter": "d",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "PYTHON",
+      "name": "PythonBasics",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the correct way to output 'Hello, World!' in Python?",
+          "options": [
+            "echo 'Hello, World!'",
+            "print('Hello, World!')",
+            "console.log('Hello, World!')",
+            "System.out.println('Hello, World!')"
+          ],
+          "correct_answer": "print('Hello, World!')",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is the data type of the value 3.14 in Python?",
+          "options": ["int", "float", "str", "bool"],
+          "correct_answer": "float",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the correct way to comment a single line in Python?",
+          "options": [
+            " // This is a comment",
+            " # This is a comment",
+            " /* This is a comment */",
+            "-- This is a comment"
+          ],
+          "correct_answer": " # This is a comment",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Which of the following is a valid variable name in Python?",
+          "options": ["1variable", " global", " my_variable", "variable-1"],
+          "correct_answer": "my_variable",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "How do you swap the values of two variables in Python without using a third variable?",
+          "options": [
+            "x = y; y = x",
+            " x, y = y, x",
+            " temp = x; x = y; y = temp",
+            "x + y; y = x; x = y"
+          ],
+          "correct_answer": " x, y = y, x",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "Which of the following data types is immutable in Python?",
+          "options": ["List", " Set", " Dictionary", "Tuple"],
+          "correct_answer": "Tuple",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "What does the type() function return in Python?",
+          "options": [
+            "The value of the variable",
+            " The type of the variable",
+            " The memory address of the variable",
+            "The length of the variable"
+          ],
+          "correct_answer": "The type of the variable",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "Which of the following function convert a string to a float in python?",
+          "options": [
+            "int(x [,base])",
+            " long(x [,base] )",
+            " float(x)",
+            "str(x)"
+          ],
+          "correct_answer": "float(x)",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "What is the output of the expression : 3*1**3",
+          "options": ["27", "9", "3", "1"],
+          "correct_answer": "3",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "What is the output of the following code : print(9//2)",
+          "options": ["4.5", "4.0", "4", "Error"],
+          "correct_answer": "4",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Which function overloads the >> operator?",
+          "options": ["more()", "gt()", "ge()", "None of the above"],
+          "correct_answer": "None of the above",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "Which operator is overloaded by the or() function?",
+          "options": ["||", "|", "//", "/"],
+          "correct_answer": "|",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "What is the purpose of the if statement in Python?",
+          "options": [
+            "To define a function",
+            "To declare a variable",
+            "To execute a block of code conditionally",
+            "To create a loop"
+          ],
+          "correct_answer": "To execute a block of code conditionally",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "Which of the following operators is used for equality comparison in Python?",
+          "options": ["==", "=", "!=", ">"],
+          "correct_answer": "==",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "How do you represent the logical AND operator in Python?",
+          "options": ["&&", "and", "AND", "&"],
+          "correct_answer": "and",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "Which statement is used to exit a loop prematurely in Python?",
+          "options": ["break", "exit", "return", "continue"],
+          "correct_answer": "break",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "Suppose li is [3, 4, 5, 20, 5, 25, 1, 3], what is li after li.pop(1)?",
+          "options": [
+            "[3, 4, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 3, 4, 5, 5, 20, 25]",
+            "[3, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 4, 5, 20, 5, 25]"
+          ],
+          "correct_answer": "[3, 5, 20, 5, 25, 1, 3]",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": " How can you iterate over the elements of a list in reverse order using a for loop?",
+          "options": [
+            "Using the reversed function",
+            "Using the reverse method",
+            "Using a negative step in the range function",
+            "Python doesn't support iterating in reverse order"
+          ],
+          "correct_answer": "Using a negative step in the range function",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": " What is the purpose of the find() function in Python strings?",
+          "options": [
+            "It returns the position of the last occurrence of a substring within a string",
+            "It returns true if the string begins with a specified prefix",
+            "It returns the position of the first occurrence of a substring within a string",
+            "Python doesn't support iterating in reverse order"
+          ],
+          "correct_answer": "It returns the position of the first occurrence of a substring within a string",
+          "correct_letter": " c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": " Which method is used to replace all tab characters with whitespace using the given tab size?",
+          "options": ["strip()", "expandtabs()", "replace()", "maketrans()"],
+          "correct_answer": "expandtabs()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        }
+      ]
+    }
+  ]
+}
