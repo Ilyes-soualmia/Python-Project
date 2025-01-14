@@ -69,6 +69,9 @@ def login():
     console.print("[bold green]User created successfully![/bold green]")
     return username
 
+def welcome(username):
+    console.print(f"[bold green]Welcome, {username}![/bold green]")
+
 def record_exam_result(username, module, score):
     users = load_users()
     for user in users['users']:
@@ -95,14 +98,12 @@ def log_exam_history(username, module, score):
         "date": current_time
     })
     save_history(history)
-    #print(f"Exam history recorded for {username}: {module} - {score} on {current_time}")
     console.print("[bold blue]Exam history recorded successfully![/bold blue] for {username} : {module} - {score} on {current_time}")
 
 def view_exam_history(username):
     history = load_history()
     user_history = [entry for entry in history['history'] if entry['username'] == username]
     if user_history:
-        #print(f"Exam history for {username}:")
         table = Table(show_header=True, header_style="bold magenta")
         table.add_column("Module", style="bold cyan")
         table.add_column("Score /20", style="bold cyan")
