@@ -940,6 +940,208 @@
           "hint": "no-hint"
         }
       ]
+    },
+    {
+      "subject": "PYTHON",
+      "name": "PythonException",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is an exception in Python?",
+          "options": [
+            "echo 'A syntax error'",
+            "A runtime error",
+            "A logical error",
+            "A compile-time error"
+          ],
+          "correct_answer": "A runtime error",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "How can you handle exceptions in Python?",
+          "options": ["Using if-else statements",
+           "Using try-except blocks",
+            "Using switch-case statements",
+             "Using for loops"
+            ],
+          "correct_answer": "Using try-except blocks",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the purpose of the finally block in exception handling?",
+          "options": [
+            " To define a block of code that will be executed if an exception occurs",
+            "To specify the code to be executed regardless of whether an exception occurs or not",
+            " To catch and handle specific exceptions",
+            "To raise a custom exception"
+          ],
+          "correct_answer": "To specify the code to be executed regardless of whether an exception occurs or not",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Which of the following statements is used to raise a custom exception in Python?",
+          "options": ["throw", " catch", " raise ", "except"],
+          "correct_answer": "raise ",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the purpose of the else block in exception handling?",
+          "options": [
+            "To handle exceptions",
+            "To specify code that will be executed if no exceptions are raised",
+            " To define custom exceptions",
+            "To skip the execution of the block if an exception occurs"
+          ],
+          "correct_answer": "To specify code that will be executed if no exceptions are raised",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "How can you catch multiple exceptions in a single except block?",
+          "options": ["Using a comma-separated list of exceptions",
+           " Using nested try-except blocks",
+            "By defining a custom exception",
+             "Using the catch keyword"],
+          "correct_answer": "Using a comma-separated list of exceptions",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "What is the purpose of the assert statement in Python exception handling?",
+          "options": [
+            "To catch and handle exceptions",
+            "To raise a custom exception",
+            " To check if a given expression is true, otherwise raise an 'AssertionError'",
+            "To ignore exceptions"
+          ],
+          "correct_answer": "To check if a given expression is true, otherwise raise an 'AssertionError'",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "What does the finally block execute if an exception is raised and not caught?",
+          "options": [
+            "It doesn't execute",
+            " It executes before the exception is raised",
+            " It executes after the exception is raised",
+            "It executes only if the exception is caught"
+          ],
+          "correct_answer": "It executes after the exception is raised",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "How can you handle exceptions globally in Python?",
+          "options": ["Using the `global_exception_handler()` function",
+           "By using the `global` keyword",
+            "By modifying the global exception settings in the `sys` module",
+             "There is no way to handle exceptions globally"],
+          "correct_answer": "By modifying the global exception settings in the `sys` module",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "In Python, what does the sys.exc_info() function return?",
+          "options": ["The exception type",
+           "The exception value",
+            "A tuple containing the exception type, value, and traceback",
+             "A dictionary containing exception information"
+            ],
+          "correct_answer": "A tuple containing the exception type, value, and traceback",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "What is the purpose of the raise statement in Python?",
+          "options": ["To terminate the program",
+           "To catch an exception",
+            "To ignore an exception",
+             "To raise an arbitrary exception"
+            ],
+          "correct_answer": "To raise an arbitrary exception",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "Which method is used to replace a pattern in a string using RegEx?",
+          "options": ["replace()", "sub()", "re.replace()", "substitute()"],
+          "correct_answer": "sub()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "Which method is used to check if a pattern is present anywhere in a string using RegEx?",
+          "options": [
+            "locate()",
+            "find()",
+            "search()",
+            "match()"
+          ],
+          "correct_answer": "search()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "How can you make a RegEx pattern match across multiple lines in Python?",
+          "options": ["re.MULTILINE",
+           "re.SINGLELINE",
+            "re.LINEALL",
+             "re.GLOBAL"],
+          "correct_answer": "re.MULTILINE",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        }
+        
+        
+       
+       
+       
+      ]
     }
   ]
 }
