@@ -1,5 +1,3 @@
-History.json
-User.json
-Users.json
+*.json
 __pycache__/
 env/
