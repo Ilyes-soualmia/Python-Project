@@ -2,15 +2,11 @@
     "history": [
         {
             "username": "ilyes",
-            "module": "exam2",
-            "score": 11,
-            "date": "2025-01-01 20:35:12"
-        },
-        {
-            "username": "ilyes",
-            "module": "ALG1",
-            "score": 12,
-            "date": "2025-01-11 23:56:17"
+            "module": "PYTHON",
+            "exam": "PythonBasics",
+            "score": 15,
+            "remarks": "Good job!",
+            "date": "2025-01-17 16:21:54"
         }
     ]
 }
