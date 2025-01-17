@@ -12,7 +12,7 @@ data = qcm.load_data()
 console = Console()
 console.print("QUIZZY 🤖",justify="center" , style="bold red")
 console.print("Welcome to the best QCM APP! 👍", justify="center", style="bold magenta")
-print(2*"\n")
+print("\n")
 
 username = udh.login()
 udh.welcome(username)
@@ -21,13 +21,15 @@ if username:
     while True:
         console.print("[bold cyan]1. Take an exam[/bold cyan]")
         console.print("[bold cyan]2. View exam history[/bold cyan]")
-        console.print("[bold cyan]3. Logout[/bold cyan]")
+        console.print("[bold cyan]3. Save exam history[/bold cyan]")
+        console.print("[bold cyan]4. Logout[/bold cyan]")
         choice = input("Enter your choice: ")
         if choice == '1':
             subject = qcm.choose_subject()
             exam_name = qcm.show_exam_titles(data, subject)
             result = qcm.show_exam(data, subject, exam_name)
-            udh.record_exam_result(username, exam_name, result)
+            remarks = udh.remarks(result)
+            udh.record_exam_result(username, subject,exam_name, result , remarks)
             
             print(f"Your result is: {result} / 20")
             for key, value in qcm.temp_dect.items():
@@ -38,6 +40,11 @@ if username:
         elif choice == '2':
             udh.view_exam_history(username)
         elif choice == '3':
+            users = udh.load_users()
+            for user in users['users']:
+                if user['username'] == username:
+                    udh.Save_history_in_users_os(user['exam_results'])
+        elif choice == '4':
             console.print("Logging out...", style="bold red")
             while True:
                 exit_choice = Prompt.ask("Do you want to exit the app? (yes/no)")
