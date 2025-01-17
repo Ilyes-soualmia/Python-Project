@@ -3,9 +3,10 @@ from rich.table import Table
 from rich.panel import Panel
 from rich.text import Text
 from rich.prompt import Prompt
-import json
+import os
 import qcm_handler as qcm
 import user_data_handler as udh
+import email_sender as es
 
 data = qcm.load_data()
 
@@ -43,7 +44,25 @@ if username:
             users = udh.load_users()
             for user in users['users']:
                 if user['username'] == username:
-                    udh.Save_history_in_users_os(user['exam_results'])
+                    if user['exam_results']:
+                        console.print("     1. Save exam history in a file" , style="bold cyan")
+                        console.print("     2. Send exam history to email" , style="bold cyan")
+                        console.print("     3. Cancel" , style="bold cyan")
+                        while True:
+                            save_choice = Prompt.ask("Do you want to save your exam history? (1/2/3)")
+                            if save_choice == '1':
+                                udh.Save_history_in_users_os(user['exam_results'])
+                            elif save_choice == '2':
+                                es.send_email(username , user['exam_results'])
+                                if os.path.exists("file.json"):
+                                    os.remove("file.json")
+                                break
+                            elif save_choice == '3':
+                                break
+                            else:
+                                console.print("Invalid choice. Please try again.", style="bold red")
+                    else:
+                        console.print("No results found!" , style="bold red")
         elif choice == '4':
             console.print("Logging out...", style="bold red")
             while True:
