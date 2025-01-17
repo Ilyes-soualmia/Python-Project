@@ -7,6 +7,8 @@ import json
 import hashlib
 from datetime import datetime
 import os
+from tkinter import Tk
+from tkinter.filedialog import asksaveasfilename
 
 console = Console()
 # Utility functions
@@ -72,33 +74,37 @@ def login():
 def welcome(username):
     console.print(f"[bold green]Welcome, {username}![/bold green]")
 
-def record_exam_result(username, module, score):
+def record_exam_result(username, module , exam , score ,remarks):
     users = load_users()
     for user in users['users']:
         if user['username'] == username:
             current_date = datetime.now().strftime("%Y-%m-%d")
             user['exam_results'].append({
                 "module": module,
+                "exam": exam,
                 "score": score,
+                "remarks": remarks,
                 "date": current_date
             })
             save_users(users)
-            print(f"Exam result recorded for {username}: {module} - {score}")
-            log_exam_history(username, module, score)
+            print(f"Exam result recorded for {username}: {exam} - {score}")
+            log_exam_history(username, module,exam, score,remarks)
             return
     print("User not found!")
 
-def log_exam_history(username, module, score):
+def log_exam_history(username, module, exam , score,remarks):
     history = load_history()
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     history['history'].append({
         "username": username,
         "module": module,
+        "exam": exam,
         "score": score,
+        "remarks": remarks,
         "date": current_time
     })
     save_history(history)
-    console.print("[bold blue]Exam history recorded successfully![/bold blue] for {username} : {module} - {score} on {current_time}")
+    console.print(f"[bold blue]Exam history recorded successfully![/bold blue] for {username} : {module} - {score} on {current_time}")
 
 def view_exam_history(username):
     history = load_history()
@@ -106,13 +112,50 @@ def view_exam_history(username):
     if user_history:
         table = Table(show_header=True, header_style="bold magenta")
         table.add_column("Module", style="bold cyan")
+        table.add_column("Exam", style="bold cyan")
         table.add_column("Score /20", style="bold cyan")
+        table.add_column("Remarks", style="bold cyan")
         table.add_column("Date", style="bold cyan")
         for entry in user_history:
-            #print(f"Module: {entry['module']}, Score: {entry['score']}, Date: {entry['date']}")
-            table.add_row(entry['module'], str(entry['score']), entry['date'])
-        console.print(f"[bold blue]Exam history for {username}:[/bold blue]")    
-        console.print(table)
+            table.add_row(entry['module'],entry['exam'], str(entry['score']), entry['remarks'],entry['date'])
+        console.print(f"[bold blue]Exam history for {username}:[/bold blue]", justify="center")    
+        console.print(table , justify="center")
     else:
-        #print(f"No exam history found for {username}.")
         console.print("[blue]You have not taken any exams yet.[/blue]")
+
+def remarks(score):
+    if score >= 18:
+        return "Excellent!"
+    elif score >= 15:
+        return "Good job!"
+    elif score >= 10:
+        return "Not bad!"
+    else:
+        return "You can do better!"
+    
+
+def Save_history_in_users_os(history):
+    # Initialize the Tkinter root window
+    root = Tk()
+    root.withdraw()  # Hide the root window
+
+    # Open a "Save As" dialog to let the user choose the folder and file name
+    file_path = asksaveasfilename(
+        defaultextension=".json",
+        filetypes=[("JSON files", "*.json")],
+        title="Save user's History",
+    )
+    print("Opening file save dialog...")
+    if file_path:
+        try:
+            # Create the JSON file and write the history to it
+            with open(file_path, "w") as file:
+                json.dump(history, file, indent=4)
+            print(f"Exam history file created and saved to {file_path}")
+            print("Done.")
+        except Exception as e:
+            print(f"An error occurred while creating the file: {e}")
+    else:
+        print("Operation canceled by the user.")
+    
+    
