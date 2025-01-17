@@ -17,12 +17,15 @@ def load_data():
 def choose_subject():
     console.print("[bold cyan]Here are the available subjects: [/bold cyan]")
     data = load_data()
+    temp_array = [] #to store the subjects and not printing them more once
     for exam in data["exams"]:
-        console.print(f"[bold magenta] | {exam["subject"]} [/bold magenta]")
+        if exam["subject"] not in temp_array:
+            temp_array.append(exam["subject"])
+            console.print(f"[bold magenta] | {exam["subject"]} [/bold magenta]")
     while True:
         subject = Prompt.ask("[bold cyan]Choose a subject: [/bold cyan] ")
         if subject.lower() in [exam["subject"].lower() for exam in data["exams"]]:
-            return subject
+            return exam["subject"]
         else:
             console.print("[red]Invalid choice. Please enter a valid subject.[/red]")
 
@@ -31,7 +34,7 @@ def show_exam_titles(data, subject):
     console.print("[bold cyan]You have choosen the subject: [/bold cyan]")
     console.print("[bold cyan]Here are the available exams in the choosen subject: [/bold cyan]")
     for exam in data["exams"]:
-        if exam["subject"].lower() == subject.lower():
+        if exam["subject"].lower() == subject.lower(): 
             console.print(f"[bold magenta] | {exam["name"]} [/bold magenta]")
     exam_name = Prompt.ask("[bold cyan]Choose an exam: [/bold cyan] ")
     return exam_name
@@ -39,7 +42,7 @@ def show_exam_titles(data, subject):
 # show choosed exam function
 def show_exam(data, subject , exam_name):
     result = 0
-    console.print(f"[bold cyan]You have choosen the subject: [/bold cyan][bold magenta]{subject[0]}[/bold magenta]")
+    console.print(f"[bold cyan]You have choosen the subject: [/bold cyan][bold magenta]{subject[0].upper()}{subject[1:].lower()}[/bold magenta]")
     console.print(f"[bold cyan]You have choosen the exam: [/bold cyan][bold magenta]{exam_name}[/bold magenta]")
     console.print("[bold cyan]Here are the questions: [/bold cyan]")
 
@@ -47,11 +50,12 @@ def show_exam(data, subject , exam_name):
         if exam["subject"] == subject and exam["name"] == exam_name:
             question_nbr = 1
             for question in exam["questions"]:
-                console.print(f"[bold magenta]{question_nbr} / {question["question"]}: [/bold magenta]")
+                console.print(f"[bold cyan in white]{question_nbr} / {question["question"]}: [/bold cyan in white]")
                 console.print(f"[bold magenta]a) {question["options"][0]}[/bold magenta]")
                 console.print(f"[bold magenta]b) {question["options"][1]}[/bold magenta]")
                 console.print(f"[bold magenta]c) {question["options"][2]}[/bold magenta]")
                 console.print(f"[bold magenta]d) {question["options"][3]}[/bold magenta]")
+                print("\n")
                 while True:
                     answer = Prompt.ask("[bold cyan]Your answer(a,b,c or d) =>: [/bold cyan] ")
                     if answer.lower() in ["a", "b", "c", "d"]:
