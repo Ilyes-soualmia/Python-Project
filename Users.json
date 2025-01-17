@@ -5,9 +5,11 @@
             "password": "07936b6566cc31f8760cf87d914f192dc2ac66e5b761525054082476639fa404",
             "exam_results": [
                 {
-                    "module": "ALG1",
-                    "score": 12,
-                    "date": "2025-01-11"
+                    "module": "PYTHON",
+                    "exam": "PythonBasics",
+                    "score": 15,
+                    "remarks": "Good job!",
+                    "date": "2025-01-17"
                 }
             ]
         }
