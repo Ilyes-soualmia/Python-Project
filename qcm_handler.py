@@ -37,7 +37,9 @@ def show_exam_titles(data, subject):
         if exam["subject"].lower() == subject.lower(): 
             console.print(f"[bold magenta] | {exam["name"]} [/bold magenta]")
     exam_name = Prompt.ask("[bold cyan]Choose an exam: [/bold cyan] ")
-    return exam_name
+    for exam in data["exams"]:
+        if exam["name"].lower() == exam_name.lower() and exam["subject"].lower() == subject.lower():
+            return exam["name"]
 
 # show choosed exam function
 def show_exam(data, subject , exam_name):
@@ -55,6 +57,8 @@ def show_exam(data, subject , exam_name):
                 console.print(f"[bold magenta]b) {question["options"][1]}[/bold magenta]")
                 console.print(f"[bold magenta]c) {question["options"][2]}[/bold magenta]")
                 console.print(f"[bold magenta]d) {question["options"][3]}[/bold magenta]")
+                if question["hint"] != "no-hint":
+                    console.print(f"[bold yellow]✨Hint: {question["hint"]}[/bold yellow]")
                 print("\n")
                 while True:
                     answer = Prompt.ask("[bold cyan]Your answer(a,b,c or d) =>: [/bold cyan] ")
