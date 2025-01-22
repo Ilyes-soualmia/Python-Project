@@ -963,11 +963,12 @@
         {
           "nbr": 2,
           "question": "How can you handle exceptions in Python?",
-          "options": ["Using if-else statements",
-           "Using try-except blocks",
+          "options": [
+            "Using if-else statements",
+            "Using try-except blocks",
             "Using switch-case statements",
-             "Using for loops"
-            ],
+            "Using for loops"
+          ],
           "correct_answer": "Using try-except blocks",
           "correct_letter": "b",
           "points": 1,
@@ -1017,10 +1018,12 @@
         {
           "nbr": 6,
           "question": "How can you catch multiple exceptions in a single except block?",
-          "options": ["Using a comma-separated list of exceptions",
-           " Using nested try-except blocks",
+          "options": [
+            "Using a comma-separated list of exceptions",
+            " Using nested try-except blocks",
             "By defining a custom exception",
-             "Using the catch keyword"],
+            "Using the catch keyword"
+          ],
           "correct_answer": "Using a comma-separated list of exceptions",
           "correct_letter": "a",
           "points": 1,
@@ -1060,10 +1063,12 @@
         {
           "nbr": 9,
           "question": "How can you handle exceptions globally in Python?",
-          "options": ["Using the `global_exception_handler()` function",
-           "By using the `global` keyword",
+          "options": [
+            "Using the `global_exception_handler()` function",
+            "By using the `global` keyword",
             "By modifying the global exception settings in the `sys` module",
-             "There is no way to handle exceptions globally"],
+            "There is no way to handle exceptions globally"
+          ],
           "correct_answer": "By modifying the global exception settings in the `sys` module",
           "correct_letter": "c",
           "points": 1,
@@ -1073,11 +1078,12 @@
         {
           "nbr": 10,
           "question": "In Python, what does the sys.exc_info() function return?",
-          "options": ["The exception type",
-           "The exception value",
+          "options": [
+            "The exception type",
+            "The exception value",
             "A tuple containing the exception type, value, and traceback",
-             "A dictionary containing exception information"
-            ],
+            "A dictionary containing exception information"
+          ],
           "correct_answer": "A tuple containing the exception type, value, and traceback",
           "correct_letter": "c",
           "points": 1,
@@ -1087,11 +1093,12 @@
         {
           "nbr": 11,
           "question": "What is the purpose of the raise statement in Python?",
-          "options": ["To terminate the program",
-           "To catch an exception",
+          "options": [
+            "To terminate the program",
+            "To catch an exception",
             "To ignore an exception",
-             "To raise an arbitrary exception"
-            ],
+            "To raise an arbitrary exception"
+          ],
           "correct_answer": "To raise an arbitrary exception",
           "correct_letter": "d",
           "points": 1,
@@ -1111,12 +1118,7 @@
         {
           "nbr": 13,
           "question": "Which method is used to check if a pattern is present anywhere in a string using RegEx?",
-          "options": [
-            "locate()",
-            "find()",
-            "search()",
-            "match()"
-          ],
+          "options": ["locate()", "find()", "search()", "match()"],
           "correct_answer": "search()",
           "correct_letter": "c",
           "points": 1,
@@ -1126,21 +1128,396 @@
         {
           "nbr": 14,
           "question": "How can you make a RegEx pattern match across multiple lines in Python?",
-          "options": ["re.MULTILINE",
-           "re.SINGLELINE",
+          "options": [
+            "re.MULTILINE",
+            "re.SINGLELINE",
             "re.LINEALL",
-             "re.GLOBAL"],
+            "re.GLOBAL"
+          ],
           "correct_answer": "re.MULTILINE",
           "correct_letter": "a",
           "points": 1,
           "type": "easy",
           "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "Which Python exception is raised when you try to access an undefined variable?",
+          "options": ["NameError", "TypeError", "KeyError", "IndexError"],
+          "correct_answer": "NameError",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "What does the 'with' statement help to simplify in Python?",
+          "options": [
+            "String concatenation",
+            "Error handling",
+            "File and resource management",
+            "Looping"
+          ],
+          "correct_answer": "File and resource management",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "What is the purpose of the 'except Exception as e' syntax in Python?",
+          "options": [
+            "To re-raise an exception",
+            "To handle all exceptions and store the exception details in 'e'",
+            "To suppress exceptions",
+            "To log exceptions without handling them"
+          ],
+          "correct_answer": "To handle all exceptions and store the exception details in 'e'",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "What type of error is raised when you try to divide by zero in Python?",
+          "options": [
+            "ZeroDivisionError",
+            "ValueError",
+            "TypeError",
+            "IndexError"
+          ],
+          "correct_answer": "ZeroDivisionError",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "Which of the following statements is used to catch exceptions in Python?",
+          "options": [
+            "if",
+            "except",
+            "for",
+            "when"
+          ],
+          "correct_answer": "except",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "What is the correct way to raise a custom exception in Python?",
+          "options": [
+            "throw CustomException()",
+            "raise CustomException()",
+            "custom_exception()",
+            "raise error CustomException()"
+          ],
+          "correct_answer": "raise CustomException()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
         }
-        
-        
-       
-       
-       
+
+
+      ]
+    },
+    {
+      "subject": "PYTHON",
+      "name": "PythonFileHandling",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is file handling in Python?",
+          "options": [
+            "Managing folders",
+            "Reading and writing file",
+            "Controlling system files",
+            "Handling exceptions in files"
+          ],
+          "correct_answer": "Reading and writing file",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "Which function is used to open a file in Python?",
+          "options": ["open_file()", "read_file()", "file_open()", "open()"],
+          "correct_answer": " open()",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "Which method is used to read the entire content of a file as a string?",
+          "options": [" read_all()", "read()", " read_full()", "readfile()"],
+          "correct_answer": "read()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is the purpose of the 'rb' mode in file opening?",
+          "options": [
+            "Read binary",
+            "Replace binary",
+            "Read and backup",
+            "Rename binary"
+          ],
+          "correct_answer": "Read binary",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the purpose of the 'a' mode in file opening?",
+          "options": ["Add", " Append", "Access", "Assign"],
+          "correct_answer": " Append",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "How can you read the first five characters of a file in Python?",
+          "options": [
+            "file.read(5)",
+            "read(file, 5)",
+            " read_first(file, 5)",
+            "file.read_first(5)"
+          ],
+          "correct_answer": "file.read(5)",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "How do you check if a file exists before opening it in Python?",
+          "options": [
+            "check_file_existence()",
+            " file_exists()",
+            " os.path.exists()",
+            "verify_file()"
+          ],
+          "correct_answer": "os.path.exists()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "What is the purpose of the 'with' statement in file handling?",
+          "options": [
+            "It creates a new file",
+            " It automatically closes the file",
+            " It appends data to a file",
+            "It reads the entire file at once"
+          ],
+          "correct_answer": "It automatically closes the file",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "How do you read a file line by line in Python?",
+          "options": [
+            "read_all_lines()",
+            "file.read_line()",
+            "readlines()",
+            "read_line(file)"
+          ],
+          "correct_answer": "readlines()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "How can you write data to a file without overwriting its existing content in Python?",
+          "options": [
+            "file.write_data()",
+            "write_file()",
+            "file.write_append()",
+            "file.write('a')"
+          ],
+          "correct_answer": "file.write_append()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Which function checks if a file exists?",
+          "options": [
+            "exists_file()",
+            "check_file()",
+            "os.path.exists()",
+            "file_exists()"
+          ],
+          "correct_answer": "os.path.exists()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "How do you check if a file is writable in Python?",
+          "options": [
+            "file.writable()",
+            "os.path.writable()",
+            "os.access(file, os.W_OK)",
+            "file.is_writable()"
+          ],
+          "correct_answer": "os.access(file, os.W_OK)",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "Which method is used to move the cursor to a specific position in a file?",
+          "options": [
+            "file.seek()",
+            "move_cursor()",
+            "cursor_position()",
+            "set_position()"
+          ],
+          "correct_answer": "file.seek()",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "What does the 'a+b' mode stand for in file opening?",
+          "options": [
+            "Append and Binary",
+            "Access and Backup",
+            "Append and Backup",
+            "Access and Binary"
+          ],
+          "correct_answer": "Append and Binary",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "How do you copy the content of one file to another in Python?",
+          "options": [
+            "copy_file()",
+            "file.copy()",
+            "shutil.copyfile()",
+            "copy_to()"
+          ],
+          "correct_answer": "shutil.copyfile()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "Which method is used to return the current position of the file cursor?",
+          "options": [
+            "file.position()",
+            "get_cursor_position()",
+            "file.tell()",
+            "cursor_location()"
+          ],
+          "correct_answer": "file.tell()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "Which Python module provides high-level file and directory handling operations?",
+          "options": [
+            "os",
+            "sys",
+            "shutil",
+            "fileutil"
+          ],
+          "correct_answer": "shutil",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "What does the 'w' mode do when opening a file in Python?",
+          "options": [
+            "Writes to a file and deletes existing content",
+            "Writes to a file without deleting content",
+            "Appends content to the file",
+            "Opens the file in read-only mode"
+          ],
+          "correct_answer": "Writes to a file and deletes existing content",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "What is the purpose of the 'encoding' parameter in the open() function?",
+          "options": [
+            "To specify the file format",
+            "To define how the file content is interpreted as text",
+            "To enable binary file handling",
+            "To set file read/write permissions"
+          ],
+          "correct_answer": "To define how the file content is interpreted as text",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "What is the default mode when opening a file using open() in Python?",
+          "options": [
+            "r",
+            "w",
+            "rb",
+            "a"
+          ],
+          "correct_answer": "r",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        }
       ]
     }
   ]
