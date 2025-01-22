@@ -1,0 +1,762 @@
+{
+    "exams": [
+      {
+        "module": "Analyse",
+        "titre":"exam1",
+        "questions": [
+          {
+            "question1": "Résoudre l'intégrale suivante : ∫(2x^3 - 5x^2 + 3x - 7) dx.",
+            "options": [
+                         "A)x^4/2 - 5x^3/3 + 3x^2/2 - 7x + C",
+                         "B)x^3 - 5x^2 + 3x + C",
+                         "C)2x^2 - 5x + C",
+                         "D)x^4 + 5x^2 + C"
+                        ],
+         "correct_answer": "A",
+         "points": 1,
+         "type": "easy",
+         "hint": "no-hint"
+
+          }, 
+          {
+            "question2": "Calculer la limite de la fonction f(x) = (3x^2 - 2x + 1)/(x^2 - 4) lorsque x tend vers 2.",
+            "options": [
+                         "A)1/4",
+                         "B)2",
+                         "c)∞", 
+                         "D)3/2"
+                        ],
+            "correct_answer": "D",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+
+
+          },
+          {
+            "question3": "Étudier la dérivabilité de la fonction f(x) = |x^2 - 4| en x = 2.",
+            "options": [ "A)Dérivable",
+                         "B)Non dérivable",
+                         "C)Dérivable seulement à droite",
+                         "D)Dérivable seulement à gauche"],
+            "correct_answer": "B",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+
+          },
+          {
+            "question4": "Résoudre l'équation différentielle : y'' + 4y = 0.",
+            "options": [ "A)y = C1 cos(2x) + C2 sin(2x)",
+                         "B)y = C1 e^2x + C2 e^-2x",
+                         "C)y = C1 sin(4x) + C2 cos(4x)",
+                         "D)y = C1 + C2x"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question6": "Trouver le rayon de convergence de la série ∑ (x^n / n^2).",
+            "options": [ "A)1",
+                         "B)∞",
+                         "C)0",
+                         "D)1/2"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question7": "Calculer la transformée de Laplace de f(t) = t^2 e^(-3t).",
+            "options": [ "A)2/(s+3)^3",
+                         "B)1/(s+2)^2",
+                         "C)6/(s+3)^4",
+                         "D)t^2 + 3t"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question8": "Résoudre le système d'équations différentielles : dx/dt = 3x + y, dy/dt = -x + 4y.",
+            "options": [  "A)Solutions oscillantes",
+                          "B)Solutions exponentielles",
+                          "C)Solutions logarithmiques",
+                          "D)Solutions paraboliques"],
+            "correct_answer": "B",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question9": "Étudier la continuité de la fonction f(x) = 1/(x-3) en x = 3.",
+            "options": [ "A)Continue",
+                         "B)Discontinue",
+                         "C)Non définie",
+                         "D)Continue à droite uniquement"],
+            "correct_answer": "C",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question10": "Résoudre l'intégrale impropre ∫(1/x) dx de 1 à ∞.",
+            "options": [ "A)∞",
+                         "B)0",
+                         "C)1",
+                         "D)-∞"],
+            "correct_answer": "A",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          
+          {
+            "question11": "Résoudre l'équation de chaleur : u_t = k u_xx.",
+            "options": [ "A)Solution de Fourier",
+                         "B)Solution exponentielle",
+                         "C)Solution logarithmique",
+                         "D)Solution polynomial"],
+            "correct_answer": "A",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          { "question12": "Quelle est la limite de la fonction f(x) = 1/x lorsque x tend vers 0 par la gauche ?",
+            "options": {
+                    "a": "0",
+                    "b": "+∞",
+                    "c": "-∞",
+                    "d": "La limite n'existe pas"
+                   },
+                   "correct_answer": "c",
+                   "points": 3,
+                   "type": "deficult",
+                   "hint": "no-hint"
+                  }
+          {
+            "question13": "Une fonction f(x) est continue en un point x = a si :",
+            "options": {
+                      "a": "lim(x → a+) f(x) = lim(x → a-) f(x) = f(a)",
+                      "b": "f(a) existe",
+                      "c": "La fonction est dérivable en a",
+                      "d": "f(a) = 0"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+            "question14": "La dérivée de la fonction f(x) = x^3 - 3x^2 + 2x est :",
+                    "options": {
+                      "a": "3x^2 - 6x + 2",
+                      "b": "3x^2 - 6x",
+                      "c": "x^2 - 3x + 2",
+                      "d": "x^3 - 2x^2 + 1"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+                    "question15": "Quelle est la primitive de la fonction f(x) = 2x ?",
+                    "options": {
+                      "a": "x^2 + C",
+                      "b": "2x + C",
+                      "c": "2x^2 + C",
+                      "d": "x^3 + C"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+                    "question16": "La fonction f(x) = sin(x) est :",
+                    "options": {
+                      "a": "Continue partout mais non dérivable",
+                      "b": "Dérivable mais non continue",
+                      "c": "Dérivable et continue partout",
+                      "d": "Ni continue ni dérivable"
+                    },
+                    "correct_answer": "c",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+                    "question17": "Le calcul de lim(x → ∞) (1/x) donne :",
+                    "options": {
+                      "a": "0",
+                      "b": "+∞",
+                      "c": "-∞",
+                      "d": "1"
+                    },
+                    "correct_answer": "a"
+                  },
+                  {
+                    "question18": "Si f(x) = x^2, quel est l'ensemble de dérivabilité de f(x) ?",
+                    "options": {
+                      "a": "R (les réels)",
+                      "b": "R\\{0} (les réels sauf 0)",
+                      "c": "[-∞, 0]",
+                      "d": "La fonction n'est pas dérivable"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+                    "question19": "Quelle est la dérivée de f(x) = e^x ?",
+                    "options": {
+                      "a": "e^x",
+                      "b": "x*e^x",
+                      "c": "x^2",
+                      "d": "e^(x+1)"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  },
+                  {
+                    "question20": "Si f'(x) = 0 pour tout x dans un intervalle, alors :",
+                    "options": {
+                      "a": "f(x) est constante",
+                      "b": "f(x) est linéaire",
+                      "c": "f(x) est exponentielle",
+                      "d": "f(x) est polynomiale"
+                    },
+                    "correct_answer": "a",
+                    "points": 3,
+                    "type": "deficult",
+                    "hint": "no-hint"
+                  }
+
+
+        ]
+      },
+      {
+        "module": "Algebre",
+        "titre":"exam2",
+        "questions": [
+          {
+            "question1": "Trouver les valeurs propres de la matrice A = [[2, -1], [-1, 2]].",
+            "options": [ "A)1 et 3",
+                         "B)2 et 4",
+                         "C)0 et 3",
+                         "D)1 et 2"],
+            "correct_answer": "A",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+
+          },
+          {
+            "question2": "Résoudre le système d'équations linéaires : 3x + 2y = 5 et 2x - y = 3.",
+            "options": [ "A)x = 1,y = 1",
+                         "B)x = 2, y = 1",
+                         "C)x = -1, y = 2",
+                         "D)x = 0, y = 1"],
+            "correct_answer": "A",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+
+          },
+          {
+            "question3": "Calculer le déterminant de la matrice A = [[1, 2], [3, 4]].",
+            "options": [ "A)-2",
+                         "B)1",
+                         "C)0",
+                         "D)2"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+
+          },
+          {
+            "question4": "Vérifier si le vecteur v = [1, 1] est dans l'espace engendré par les vecteurs u = [1, 0] et w = [0, 1].",
+            "options": ["A)Oui", "B)Non", "C)Inconnu", "D)Dépend du scalaire"],
+            "correct_answer": "A"
+          },
+          {
+            "question5": "Calculer la norme du vecteur u = [3, 4].",
+            "options": [ "A)5",
+                         "B)7",
+                         "C)3",
+                         "D)4"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question6": "Trouver le produit scalaire des vecteurs u = [1, 2] et v = [2, 3].",
+            "options": [ "A)8",
+                         "B)7",
+                         "C)6",
+                         "D)5"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question7": "Calculer le rang de la matrice A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+            "options": [ "A)2",
+                         "B)3",
+                         "C)1",
+                         "D)0"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question8": "Résoudre l'équation caractéristique de la matrice A = [[2, 1], [1, 2]].",
+            "options": [ "A)λ^2 - 3λ + 2 = 0",
+                         "B)λ^2 - 4λ + 3 = 0",
+                         "C)λ^2 - 5λ + 6 = 0",
+                         "D)λ^2 - 2λ + 1 = 0"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+         
+          {
+            "question9": "Déterminer si la matrice A = [[2, 0], [0, 2]] est diagonalisable.",
+            "options": [ "A)Oui",
+                         "B)Non",
+                         "C)Dépend des vecteurs propres",
+                         "D)Inconnu"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question10": "Calculer le produit matriciel de A = [[1, 2], [3, 4]] et B = [[2, 0], [1, 2]].",
+            "options": [ ["4, 4"],
+                         ["7, 8"],
+                         ["8, 8"],
+                          ["5, 4"]],
+            "correct_answer": [["4, 4"], ["7, 8"]],
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          {
+            "question11": "Trouver les vecteurs propres de la matrice A = [[3, 1], [0, 3]].",
+            "options": [ "[1, 0]",
+                         "[0, 1]",
+                         "[1, 1]",
+                         "[3, 1]"],
+            "correct_answer": "[1, 0]",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          {
+            "question12": "Le système d'équations suivant a une solution unique si et seulement si : (2x + 3y = 5, 4x + 6y = 10)",
+            "options": {
+              "a": "Le déterminant est nul",
+              "b": "Les droites sont parallèles",
+              "c": "Les droites se coupent en un seul point",
+              "d": "Il n'existe pas de solution"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          {
+            "question13": "Si A est une matrice 2x2, alors le déterminant de A est nul si :",
+            "options": {
+              "a": "A est inversible",
+              "b": "Les colonnes de A sont linéairement indépendantes",
+              "c": "Les lignes de A sont linéairement dépendantes",
+              "d": "Le rang de A est maximal"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question14": "Le produit de deux matrices inversibles est :",
+            "options": {
+              "a": "Toujours inversible",
+              "b": "Inversible si et seulement si les matrices sont diagonales",
+              "c": "Non inversible",
+              "d": "Inversible si les matrices sont carrées"
+            },
+            "correct_answer": "a","points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+          {
+            "question15": "Le rang d'une matrice correspond à :",
+            "options": {
+              "a": "Le nombre de lignes non nulles",
+              "b": "Le nombre de colonnes",
+              "c": "Le nombre maximal de vecteurs linéairement indépendants",
+              "d": "Le nombre de solutions du système associé"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question16": "Le polynôme caractéristique d'une matrice carrée est :",
+            "options": {
+              "a": "Le déterminant de la matrice",
+              "b": "Le polynôme obtenu en prenant le déterminant de (A - λI)",
+              "c": "Le produit des valeurs propres de la matrice",
+              "d": "Le polynôme dont les racines sont les valeurs propres de A"
+            },
+            "correct_answer": "b",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question17": "Une matrice est dite diagonalisable si :",
+            "options": {
+              "a": "Elle a une base de vecteurs propres",
+              "b": "Son déterminant est nul",
+              "c": "Elle est inversible",
+              "d": "Elle est symétrique"
+            },
+            "correct_answer": "a",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question18": "Les valeurs propres d'une matrice sont les racines de :",
+            "options": {
+              "a": "Le polynôme caractéristique",
+              "b": "La matrice inversée",
+              "c": "La matrice adjointée",
+              "d": "Le déterminant de la matrice"
+            },
+            "correct_answer": "a",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question19": "Le déterminant d'une matrice triangulaire est :",
+            "options": {
+              "a": "La somme des éléments de la diagonale",
+              "b": "Le produit des éléments de la diagonale",
+              "c": "Toujours nul",
+              "d": "Le produit des valeurs propres"
+            },
+            "correct_answer": "b",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question20": "Si A est une matrice inversible, alors A^(-1) est :",
+            "options": {
+              "a": "La matrice obtenue en permutant les lignes et colonnes de A",
+              "b": "La transposée de A",
+              "c": "La matrice qui, multipliée par A, donne l'identité",
+              "d": "Le déterminant de A"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          }
+        ]
+      },
+      {
+        "module": "Base de Donnees",
+        "titre":"exam3",
+        "questions": [
+          {
+            "question1": "Quelle est la clé primaire d'une base de données relationnelle ?",
+            "options": [ "A)Un attribut unique",
+                         "B)Un ensemble de colonnes",
+                         "C)Une contrainte",
+                         "D)Un identifiant"],
+            "correct_answer": "A",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+
+          },
+          {
+            "question2": "Qu'est-ce qu'une clé étrangère dans un schéma relationnel ?",
+            "options": [ "A)Un attribut lié à la clé primaire",
+                         "B)Une contrainte",
+                         "C)Une référence à un autre tableau",
+                         "D)Un type de colonne"],
+            "correct_answer": "C",
+            "points": 1,
+            "type": "easy",
+            "hint": "no-hint"
+
+          },
+          {
+            "question3": "Quel est le rôle de l'opération JOIN en SQL ?",
+            "options": [ "A)Combiner des lignes de plusieurs tables",
+                         "B)Sélectionner des colonnes",
+                         "C)Ajouter des données",
+                         "D)Supprimer des données"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question4": "Quelle est la forme normale qui élimine les dépendances fonctionnelles partielles ?",
+            "options": [ "A)2NF",
+                         "B)3NF",
+                         "C)1NF",
+                         "D)BCNF"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question5": "Quelle est l'instruction SQL pour supprimer une table ?",
+            "options": [ "A)DROP TABLE",
+                         "B)DELETE TABLE",
+                         "C)REMOVE TABLE",
+                         "D)ERASE TABLE"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question6": "Comment créer une nouvelle base de données en SQL ?",
+            "options": [ "A)CREATE DATABASE",
+                         "B)NEW DATABASE",
+                         "C)MAKE DATABASE",
+                         "D)INSERT DATABASE"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question7": "Comment insérer des données dans une table SQL ?",
+            "options": [ "A)INSERT INTO",
+                         "B)ADD DATA",
+                         "C)INSERT DATA",
+                         "D)APPEND DATA"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+         
+          {
+            "question8": "Quelle est la syntaxe correcte pour créer une clé étrangère en SQL ?",
+            "options": [ "A)FOREIGN KEY REFERENCES",
+                         "B)FOREIGN KEY ->",
+                         "C)REFERENCE FOREIGN",
+                         "D)LINK FOREIGN"],
+            "correct_answer": "A",
+            "points": 2,
+            "type": "medium",
+            "hint": "no-hint"
+
+          },
+          {
+            "question9": "Qu'est-ce qu'une transaction en base de données ?",
+            "options": [ "A)Un ensemble d'opérations exécutées de manière atomique",
+                         "B)Une mise à jour",
+                         "C)Un transfert de données",
+                         "D)Une lecture de données"],
+            "correct_answer": "A",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+
+          },
+         
+          {
+            "question10": "Quelle est l'instruction pour mettre à jour des données dans une table SQL ?",
+            "options": [ "A)UPDATE",
+                         "B)MODIFY",
+                         "C)CHANGE",
+                         "D)ALTER"],
+            "correct_answer": "A",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question11": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête ?",
+            "options": {
+              "a": "WHERE",
+              "b": "GROUP BY",
+              "c": "ORDER BY",
+              "d": "HAVING"
+            },
+            "correct_answer": "a",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question12": "Quelle commande SQL est utilisée pour récupérer des données d'une base de données ?",
+            "options": {
+              "a": "GET",
+              "b": "EXTRACT",
+              "c": "SELECT",
+              "d": "FETCH"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question13": "Quelle commande SQL est utilisée pour supprimer des lignes d'une table ?",
+            "options": {
+              "a": "REMOVE",
+              "b": "DROP",
+              "c": "DELETE",
+              "d": "CLEAR"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question14": "Quelle fonction SQL est utilisée pour compter le nombre de lignes dans un résultat ?",
+            "options": {
+              "a": "COUNT()",
+              "b": "SUM()",
+              "c": "TOTAL()",
+              "d": "CALCULATE()"
+            },
+            "correct_answer": "a",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question15": "Laquelle des commandes suivantes est utilisée pour modifier une table existante en SQL ?",
+            "options": {
+              "a": "CHANGE TABLE",
+              "b": "MODIFY TABLE",
+              "c": "ALTER TABLE",
+              "d": "UPDATE TABLE"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question16": "Quelle clause SQL est utilisée pour regrouper les lignes ayant les mêmes valeurs ?",
+            "options": {
+              "a": "ORDER BY",
+              "b": "GROUP BY",
+              "c": "PARTITION BY",
+              "d": "UNION"
+            },
+            "correct_answer": "b",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question17": "Quelle clause SQL est utilisée pour trier les résultats d'une requête ?",
+            "options": {
+              "a": "SORT BY",
+              "b": "ORDER BY",
+              "c": "GROUP BY",
+              "d": "ARRANGE BY"
+            },
+            "correct_answer": "b",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question18": "Quelle commande SQL est utilisée pour créer une nouvelle table ?",
+            "options": {
+              "a": "INSERT INTO",
+              "b": "CREATE TABLE",
+              "c": "ADD TABLE",
+              "d": "NEW TABLE"
+            },
+            "correct_answer": "b",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question19": "Quel mot-clé SQL est utilisé pour éliminer les doublons dans les résultats d'une requête ?",
+            "options": {
+              "a": "DISTINCT",
+              "b": "UNIQUE",
+              "c": "FILTER",
+              "d": "ONLY"
+            },
+            "correct_answer": "a",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          },
+          {
+            "question20": "Quelle commande SQL est utilisée pour ajouter de nouvelles données dans une table ?",
+            "options": {
+              "a": "ADD",
+              "b": "APPEND",
+              "c": "INSERT INTO",
+              "d": "MERGE"
+            },
+            "correct_answer": "c",
+            "points": 3,
+            "type": "deficult",
+            "hint": "no-hint"
+          }
+
+        ]
+      }
+    ]
+  }
+  
