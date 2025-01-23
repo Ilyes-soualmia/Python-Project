@@ -27,7 +27,7 @@ def send_email(username , jsonfile):
     body = f"""
     Hello, {username}!
     this is your quiz history
-    attached is a json file
+    attached in a json file
     thanks for using our service
     """
 
