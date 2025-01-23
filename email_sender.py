@@ -278,7 +278,7 @@ text-decoration: none
     msg['To'] = email_to
     msg['Subject'] = subject
     # Attach the body of the message
-    msg.attach(MIMEText(body, 'plain'))
+    msg.attach(MIMEText(body, 'html'))
     # turn the data into a json file
     with open("file.json", "w") as file:
         json.dump(jsonfile, file, indent=4)
