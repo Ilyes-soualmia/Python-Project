@@ -24,22 +24,24 @@ def choose_subject():
             console.print(f"[bold magenta] | {exam["subject"]} [/bold magenta]")
     while True:
         subject = Prompt.ask("[bold cyan]Choose a subject: [/bold cyan] ")
-        if subject.lower() in [exam["subject"].lower() for exam in data["exams"]]:
-            return exam["subject"]
-        else:
+        while True:
+            for exam in data["exams"]:
+                if subject.lower() == exam["subject"].lower():
+                    return exam["subject"]
             console.print("[red]Invalid choice. Please enter a valid subject.[/red]")
 
 # show choosed subject function
 def show_exam_titles(data, subject):
-    console.print("[bold cyan]You have choosen the subject: [/bold cyan]")
-    console.print("[bold cyan]Here are the available exams in the choosen subject: [/bold cyan]")
+    console.print(f"[bold cyan]Here are the available exams in {subject} : [/bold cyan]")
     for exam in data["exams"]:
-        if exam["subject"].lower() == subject.lower(): 
+        if exam["subject"] == subject: 
             console.print(f"[bold magenta] | {exam["name"]} [/bold magenta]")
     exam_name = Prompt.ask("[bold cyan]Choose an exam: [/bold cyan] ")
-    for exam in data["exams"]:
-        if exam["name"].lower() == exam_name.lower() and exam["subject"].lower() == subject.lower():
-            return exam["name"]
+    while True:
+        for exam in data["exams"]:
+            if exam["name"].lower() == exam_name.lower() and exam["subject"] == subject:
+                return exam["name"]
+        console.print("[red]Invalid choice. Please enter a valid exam.[/red]")
 
 # show choosed exam function
 def show_exam(data, subject , exam_name):
