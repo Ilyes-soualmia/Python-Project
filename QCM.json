@@ -3,6 +3,7 @@
     {
       "subject": "Analysis",
       "name": "ANL1",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -289,6 +290,7 @@
     {
       "subject": "Algebra",
       "name": "ALG1",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -547,10 +549,10 @@
         }
       ]
     },
-
     {
       "subject": "Database",
       "name": "BDD1",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -842,6 +844,7 @@
     {
       "subject": "OOP",
       "name": "concepts",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -1128,6 +1131,7 @@
     {
       "subject": "PYTHON",
       "name": "PythonBasics",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -1379,6 +1383,7 @@
     {
       "subject": "PYTHON",
       "name": "PythonException",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -1663,6 +1668,7 @@
     {
       "subject": "PYTHON",
       "name": "PythonFileHandling",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -1953,7 +1959,8 @@
     },
     {
       "subject": "Database",
-      "name": "expertDB",
+      "name": "BDDpro",
+      "total_points": 0,
       "questions": [
         {
           "nbr": 1,
@@ -2028,249 +2035,6 @@
           "correct_letter": "a",
           "points": 2,
           "type": "medium",
-          "hint": "no-hint"
-        }
-      ]
-    },
-    {
-      "subject": "OOP",
-      "name": "intermediateOOP",
-      "questions": [
-        {
-          "nbr": 1,
-          "question": "What is the difference between composition and inheritance in OOP?",
-          "options": [
-            "Composition is a 'has-a' relationship, while inheritance is an 'is-a' relationship",
-            "Composition is an 'is-a' relationship, while inheritance is a 'has-a' relationship",
-            "Composition is used for polymorphism, while inheritance is used for encapsulation",
-            "Composition is used for encapsulation, while inheritance is used for polymorphism"
-          ],
-          "correct_answer": "Composition is a 'has-a' relationship, while inheritance is an 'is-a' relationship",
-          "correct_letter": "a",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 2,
-          "question": "What is the purpose of the 'this' keyword in Java?",
-          "options": [
-            "To refer to the current instance of the class",
-            "To refer to the parent class",
-            "To refer to a static method",
-            "To refer to a global variable"
-          ],
-          "correct_answer": "To refer to the current instance of the class",
-          "correct_letter": "a",
-          "points": 1,
-          "type": "easy",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 3,
-          "question": "What is method overloading in OOP?",
-          "options": [
-            "Defining multiple methods with the same name but different parameters",
-            "Redefining a method in a subclass",
-            "Creating a method with no parameters",
-            "Using the same method name in different classes"
-          ],
-          "correct_answer": "Defining multiple methods with the same name but different parameters",
-          "correct_letter": "a",
-          "points": 1,
-          "type": "easy",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 4,
-          "question": "What is the purpose of the 'final' keyword in Java?",
-          "options": [
-            "To prevent a class from being inherited",
-            "To allow a method to be overridden",
-            "To make a variable mutable",
-            "To create a static method"
-          ],
-          "correct_answer": "To prevent a class from being inherited",
-          "correct_letter": "a",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 5,
-          "question": "What is the difference between an abstract class and an interface in Java?",
-          "options": [
-            "An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods",
-            "An interface can have both abstract and concrete methods, while an abstract class can only have abstract methods",
-            "An abstract class is used for polymorphism, while an interface is used for inheritance",
-            "An interface is used for polymorphism, while an abstract class is used for inheritance"
-          ],
-          "correct_answer": "An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods",
-          "correct_letter": "a",
-          "points": 3,
-          "type": "difficult",
-          "hint": "no-hint"
-        }
-      ]
-    },
-    {
-      "subject": "Computer Science",
-      "name": "CSFundamentals",
-      "questions": [
-        {
-          "nbr": 1,
-          "question": "What is the time complexity of a binary search algorithm?",
-          "options": [
-            "O(1)",
-            "O(log n)",
-            "O(n)",
-            "O(n^2)"
-          ],
-          "correct_answer": "O(log n)",
-          "correct_letter": "b",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 2,
-          "question": "What is the purpose of a hash function in data structures?",
-          "options": [
-            "To map data of arbitrary size to fixed-size values",
-            "To sort data in ascending order",
-            "To encrypt data",
-            "To compress data"
-          ],
-          "correct_answer": "To map data of arbitrary size to fixed-size values",
-          "correct_letter": "a",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 3,
-          "question": "What is the difference between a stack and a queue?",
-          "options": [
-            "A stack is LIFO, while a queue is FIFO",
-            "A stack is FIFO, while a queue is LIFO",
-            "A stack is used for sorting, while a queue is used for searching",
-            "A stack is used for searching, while a queue is used for sorting"
-          ],
-          "correct_answer": "A stack is LIFO, while a queue is FIFO",
-          "correct_letter": "a",
-          "points": 1,
-          "type": "easy",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 4,
-          "question": "What is the purpose of a binary tree in data structures?",
-          "options": [
-            "To store hierarchical data",
-            "To sort data in linear time",
-            "To encrypt data",
-            "To compress data"
-          ],
-          "correct_answer": "To store hierarchical data",
-          "correct_letter": "a",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 5,
-          "question": "What is the worst-case time complexity of quicksort?",
-          "options": [
-            "O(n log n)",
-            "O(n^2)",
-            "O(n)",
-            "O(log n)"
-          ],
-          "correct_answer": "O(n^2)",
-          "correct_letter": "b",
-          "points": 3,
-          "type": "difficult",
-          "hint": "no-hint"
-        }
-      ]
-    },
-    {
-      "subject": "Computer Science",
-      "name": "AdvancedCS",
-      "questions": [
-        {
-          "nbr": 1,
-          "question": "What is the purpose of dynamic programming in algorithms?",
-          "options": [
-            "To solve problems by breaking them into smaller subproblems",
-            "To sort data in linear time",
-            "To encrypt data",
-            "To compress data"
-          ],
-          "correct_answer": "To solve problems by breaking them into smaller subproblems",
-          "correct_letter": "a",
-          "points": 3,
-          "type": "difficult",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 2,
-          "question": "What is the time complexity of the Floyd-Warshall algorithm?",
-          "options": [
-            "O(n^2)",
-            "O(n^3)",
-            "O(n log n)",
-            "O(n)"
-          ],
-          "correct_answer": "O(n^3)",
-          "correct_letter": "b",
-          "points": 3,
-          "type": "difficult",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 3,
-          "question": "What is the purpose of the A* algorithm?",
-          "options": [
-            "To find the shortest path in a graph",
-            "To sort data in linear time",
-            "To encrypt data",
-            "To compress data"
-          ],
-          "correct_answer": "To find the shortest path in a graph",
-          "correct_letter": "a",
-          "points": 3,
-          "type": "difficult",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 4,
-          "question": "What is the difference between BFS and DFS?",
-          "options": [
-            "BFS uses a queue, while DFS uses a stack",
-            "BFS uses a stack, while DFS uses a queue",
-            "BFS is used for sorting, while DFS is used for searching",
-            "BFS is used for searching, while DFS is used for sorting"
-          ],
-          "correct_answer": "BFS uses a queue, while DFS uses a stack",
-          "correct_letter": "a",
-          "points": 2,
-          "type": "medium",
-          "hint": "no-hint"
-        },
-        {
-          "nbr": 5,
-          "question": "What is the purpose of the Dijkstra algorithm?",
-          "options": [
-            "To find the shortest path in a weighted graph",
-            "To sort data in linear time",
-            "To encrypt data",
-            "To compress data"
-          ],
-          "correct_answer": "To find the shortest path in a weighted graph",
-          "correct_letter": "a",
-          "points": 3,
-          "type": "difficult",
           "hint": "no-hint"
         }
       ]
