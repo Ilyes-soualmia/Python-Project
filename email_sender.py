@@ -21,9 +21,9 @@ pswd = pde.pswd
 # name the email subject
 subject = "Quizzy - Your Quiz history"
 
-def send_email(username , jsonfile):
+def send_email(username , jsonfile , email_to):
 
-    email_to = input("Enter the email address you want to send the email to: ")
+    #email_to = input("Enter the email address you want to send the email to: ")
 
     # Body of the email
     body = f"""
