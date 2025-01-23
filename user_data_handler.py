@@ -9,6 +9,7 @@ from datetime import datetime
 import os
 from tkinter import Tk
 from tkinter.filedialog import asksaveasfilename
+import re
 
 console = Console()
 # Utility functions
@@ -60,10 +61,12 @@ def login():
             else:
                 console.print("[red]Username already exists , and password is wrong[/red]")
                 return login()
-    console.print("[red]User not found.[/red]")
+    email = Prompt.ask("[bold cyan]Enter your email[/bold cyan]") #to be entered only once when the user is created
+        
     console.print("[blue]Creating new user...[/blue]")
     users['users'].append({
         "username": username,
+        "email": email,
         "password": hashed_password,
         "exam_results": []
     })
@@ -159,3 +162,54 @@ def Save_history_in_users_os(history):
         print("Operation canceled by the user.")
     
     
+def modify_user_infos(username):
+    users = load_users()
+    for user in users['users']:
+        if user['username'] == username:
+            console.print("[bold cyan]1. Change username[/bold cyan]")
+            console.print("[bold cyan]2. Change password[/bold cyan]")
+            console.print("[bold cyan]3. change email[/bold cyan]")
+            console.print("[bold cyan]4. Cancel[/bold cyan]")
+            while True:
+                choice = Prompt.ask("[bold cyan]Enter your choice[/bold cyan]")
+                if choice == '1':
+                    while True:
+                        new_username = Prompt.ask("[bold cyan]Enter new username[/bold cyan]")
+                        if any(u['username'] == new_username for u in users['users']):
+                            user['username'] = new_username
+                            break
+                        console.print("[red]Username already exists![/red]")
+                    save_users(users)
+                    console.print("[bold green]Username changed successfully![/bold green]")
+                elif choice == '2':
+                    while True:
+                        new_password = Prompt.ask("[bold cyan]Enter new password[/bold cyan]")
+                        confirm_password = Prompt.ask("[bold cyan]Confirm new password[/bold cyan]")
+                        if new_password != confirm_password:
+                            console.print("[red]Passwords do not match![/red]")
+                        else:
+                            hashed_password = hashlib.sha256(new_password.encode()).hexdigest()
+                            user['password'] = hashed_password
+                            save_users(users)
+                            console.print("[bold green]Password changed successfully![/bold green]")
+                            break
+                        choice_2 = Prompt.ask("[bold yellow in white]Do you want to repeat(r) the operation?[/bold yellow in white]")
+                        if choice_2 != 'r':
+                            break
+                elif choice == '3':
+                    while True:
+                        new_email = Prompt.ask("[bold cyan]Enter new email[/bold cyan]")
+                        if validate_email(new_email):
+
+                            break
+                    user['email'] = new_email
+                elif choice == '4':
+                    console.print("[bold cyan]Operation canceled[/bold cyan]")
+                    break
+                else:
+                    console.print("[red]Invalid choice![/red]")
+    console.print("[red]User not found![/red]")
+
+def validate_email(email):
+    return bool(re.match(r'[^@]+@[^@]+\.[^@]+', email))
+
