@@ -24,11 +24,10 @@ def choose_subject():
             console.print(f"[bold magenta] | {exam["subject"]} [/bold magenta]")
     while True:
         subject = Prompt.ask("[bold cyan]Choose a subject: [/bold cyan] ")
-        while True:
-            for exam in data["exams"]:
-                if subject.lower() == exam["subject"].lower():
-                    return exam["subject"]
-            console.print("[red]Invalid choice. Please enter a valid subject.[/red]")
+        for exam in data["exams"]:
+            if subject.lower() == exam["subject"].lower():
+                return exam["subject"]
+        console.print("[red]Invalid choice. Please enter a valid subject.[/red]")
 
 # show choosed subject function
 def show_exam_titles(data, subject):
@@ -36,8 +35,8 @@ def show_exam_titles(data, subject):
     for exam in data["exams"]:
         if exam["subject"] == subject: 
             console.print(f"[bold magenta] | {exam["name"]} [/bold magenta]")
-    exam_name = Prompt.ask("[bold cyan]Choose an exam: [/bold cyan] ")
     while True:
+        exam_name = Prompt.ask("[bold cyan]Choose an exam: [/bold cyan] ")
         for exam in data["exams"]:
             if exam["name"].lower() == exam_name.lower() and exam["subject"] == subject:
                 return exam["name"]
