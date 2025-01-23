@@ -3,6 +3,7 @@
         {
             "username": "ilyes",
             "password": "07936b6566cc31f8760cf87d914f192dc2ac66e5b761525054082476639fa404",
+            "email": "ilyessoualmia6768@gmail.com",
             "exam_results": [
                 {
                     "module": "PYTHON",
@@ -10,6 +11,34 @@
                     "score": 15,
                     "remarks": "Good job!",
                     "date": "2025-01-17"
+                },
+                {
+                    "module": "Database",
+                    "exam": "BDD1",
+                    "score": 19,
+                    "remarks": "Excellent!",
+                    "date": "2025-01-23"
+                },
+                {
+                    "module": "Analysis",
+                    "exam": "ANL1",
+                    "score": 6,
+                    "remarks": "You can do better!",
+                    "date": "2025-01-23"
+                }
+            ]
+        },
+        {
+            "username": "user11",
+            "email": "user1@gmailllll.com",
+            "password": "65516762268a10ef3929d85dfd46c305b48e4bef9882c44bbd00d25a853c7a1a",
+            "exam_results": [
+                {
+                    "module": "PYTHON",
+                    "exam": "PythonBasics",
+                    "score": 3.0,
+                    "remarks": "You can do better!",
+                    "date": "2025-01-23"
                 }
             ]
         }
