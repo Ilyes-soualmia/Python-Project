@@ -1,3 +1,4 @@
 *.json
 __pycache__/
 env/
+personal_data_email.py
