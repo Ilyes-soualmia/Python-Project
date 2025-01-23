@@ -50,9 +50,8 @@ def show_exam(data, subject , exam_name):
     console.print("[bold cyan]Here are the questions: [/bold cyan]")
 
     for exam in data["exams"]:
-        if exam["subject"] == subject and exam["name"] == exam_name:
-            if exam["total_points"] == 0:
-                cndtn = True                #if it's 0 then we calculate the total points of the exam
+        if exam["subject"] == subject and exam["name"] == exam_name: 
+            total_points = 0
             question_nbr = 1
             for question in exam["questions"]:
                 console.print(f"[bold cyan in white]{question_nbr} / {question["question"]}: [/bold cyan in white]")
@@ -62,8 +61,7 @@ def show_exam(data, subject , exam_name):
                 console.print(f"[bold magenta]d) {question["options"][3]}[/bold magenta]")
                 if question["hint"] != "no-hint":
                     console.print(f"[bold yellow]✨Hint: {question["hint"]}[/bold yellow]")
-                if cndtn:
-                    exam["total_points"] += question["points"]   #add the points of the question to the total points of the exam
+                total_points += question["points"]
                 print("\n")
                 while True:
                     answer = Prompt.ask("[bold cyan]Your answer(a,b,c or d) =>: [/bold cyan] ")
@@ -80,6 +78,6 @@ def show_exam(data, subject , exam_name):
                 question_nbr += 1
             console.print("[bold magenta]Exam finished![/bold magenta]")
         
-            result / exam["total_points"] * 20    
-    return result
+           
+    return result / total_points * 20
 
