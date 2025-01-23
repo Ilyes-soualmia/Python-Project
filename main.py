@@ -55,7 +55,7 @@ if username:
                             if save_choice == '1':
                                 udh.Save_history_in_users_os(user['exam_results'])
                             elif save_choice == '2':
-                                es.send_email(username , user['exam_results'])
+                                es.send_email(username , user['exam_results'] , user['email'])
                                 if os.path.exists("file.json"):
                                     os.remove("file.json")
                                 break
@@ -76,7 +76,7 @@ if username:
                     break
                 elif exit_choice == "no":
                     username = udh.login()
-                    console.print(f"[bold green]Welcome back, {username}!, i knew you can't quit this beautiful app[/bold green]")
+                    console.print(f"[bold green]Welcome back✨, {username}!, i knew you can't quit this beautiful app 😁[/bold green]")
                     break
                 else:
                     console.print("Invalid choice. Please try again.", style="bold red") #aaaaaaah it's not that hard , just yes or no 
