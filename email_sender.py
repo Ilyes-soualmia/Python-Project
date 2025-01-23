@@ -4,16 +4,16 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 import json
+import personal_data_email as pde
 
 # Setup port number and server name
 smtp_port = 587                 # i used 578 cuz it's the standard secure SMTP port
 smtp_server = "smtp.gmail.com" 
 
 # Set up the email lists
-email_from = "techtitans1594@gmail.com"
+email_from = pde.email_from
 
-
-pswd = "phyjmhjvjfedvope"
+pswd = pde.pswd
 
 
 # name the email subject
@@ -66,5 +66,5 @@ def send_email(username , jsonfile):
     server.quit()
 
 # Usage example 
-#send_email("ilyes", "file1.json")
+#send_email(username, "file1.json")
 
