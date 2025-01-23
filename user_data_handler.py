@@ -166,19 +166,21 @@ def modify_user_infos(username):
     users = load_users()
     for user in users['users']:
         if user['username'] == username:
-            console.print("[bold cyan]1. Change username[/bold cyan]")
-            console.print("[bold cyan]2. Change password[/bold cyan]")
-            console.print("[bold cyan]3. change email[/bold cyan]")
-            console.print("[bold cyan]4. Cancel[/bold cyan]")
             while True:
+                console.print("[bold cyan]1. Change username[/bold cyan]")
+                console.print("[bold cyan]2. Change password[/bold cyan]")
+                console.print("[bold cyan]3. change email[/bold cyan]")
+                console.print("[bold cyan]4. Cancel[/bold cyan]")
                 choice = Prompt.ask("[bold cyan]Enter your choice[/bold cyan]")
                 if choice == '1':
                     while True:
                         new_username = Prompt.ask("[bold cyan]Enter new username[/bold cyan]")
                         if any(u['username'] == new_username for u in users['users']):
+                            console.print("[red]Username already exists![/red]")
+                        else:    
                             user['username'] = new_username
                             break
-                        console.print("[red]Username already exists![/red]")
+                        
                     save_users(users)
                     console.print("[bold green]Username changed successfully![/bold green]")
                 elif choice == '2':
@@ -200,16 +202,34 @@ def modify_user_infos(username):
                     while True:
                         new_email = Prompt.ask("[bold cyan]Enter new email[/bold cyan]")
                         if validate_email(new_email):
-
-                            break
+                            if any(u['email'] == new_email for u in users['users']):
+                                console.print("[red]Email already exists![/red]")
+                            else:
+                                user['email'] = new_email
+                                break
+                        else:
+                            console.print("[red]Invalid email address![/red]")
+                            
                     user['email'] = new_email
                 elif choice == '4':
                     console.print("[bold cyan]Operation canceled[/bold cyan]")
                     break
                 else:
                     console.print("[red]Invalid choice![/red]")
-    console.print("[red]User not found![/red]")
+    
+
+
+
+
+
+
+
+
+
 
 def validate_email(email):
     return bool(re.match(r'[^@]+@[^@]+\.[^@]+', email))
 
+def validate_password(password):
+    return bool(re.match(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$', password))
+    # i won't use this function because i want to keep the password simple for the user to remember it easily
