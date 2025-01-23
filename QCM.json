@@ -133,6 +133,156 @@
           "points": 3,
           "type": "difficult",
           "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Solve the heat equation: u_t = k u_xx.",
+          "options": [
+            "Fourier solution",
+            "Exponential solution",
+            "Logarithmic solution",
+            "Polynomial solution"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "Fourier solution",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "What is the limit of the function f(x) = 1/x as x approaches 0 from the left?",
+          "options": [
+            "0",
+            "+∞",
+            "-∞",
+            "The limit does not exist"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "-∞",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "A function f(x) is continuous at a point x = a if:",
+          "options": [
+            "lim(x → a+) f(x) = lim(x → a-) f(x) = f(a)",
+            "f(a) exists",
+            "The function is differentiable at a",
+            "f(a) = 0"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "lim(x → a+) f(x) = lim(x → a-) f(x) = f(a)",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "The derivative of the function f(x) = x^3 - 3x^2 + 2x is:",
+          "options": [
+            "3x^2 - 6x + 2",
+            "3x^2 - 6x",
+            "x^2 - 3x + 2",
+            "x^3 - 2x^2 + 1"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "3x^2 - 6x + 2" ,
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "What is the primitive of the function f(x) = 2x?",
+          "options": [
+            "x^2 + C",
+            "2x + C",
+            "2x^2 + C",
+            "x^3 + C"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "x^2 + C" ,
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "The function f(x) = sin(x) is:",
+          "options": [
+            "Continuous everywhere but not differentiable",
+            "Differentiable but not continuous",
+            "Differentiable and continuous everywhere",
+            "Neither continuous nor differentiable"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "Differentiable and continuous everywhere",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "The calculation of lim(x → ∞) (1/x) gives:",
+          "options": [
+            "0",
+            "+∞",
+            "-∞",
+            "1"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "0",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "If f(x) = x^2, what is the domain of differentiability of f(x)?",
+          "options": [
+            "R (the real numbers)",
+            "R\\{0} (the real numbers except 0)",
+            "[-∞, 0]",
+            "The function is not differentiable"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "R (the real numbers)",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "What is the derivative of f(x) = e^x?",
+          "options": [
+            "e^x",
+            "x*e^x",
+            "x^2",
+            "e^(x+1)"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "e^x",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "If f'(x) = 0 for all x in an interval, then:",
+          "options": [
+            "f(x) is constant",
+            "f(x) is linear",
+            "f(x) is exponential",
+            "f(x) is polynomial"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "f(x) is constant",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
         }
       ]
     },
@@ -256,6 +406,141 @@
           "options": ["[1, 0]", "[0, 1]", "[1, 1]", "[3, 1]"],
           "correct_answer": "[1, 0]",
           "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "Le système d'équations suivant a une solution unique si et seulement si : (2x + 3y = 5, 4x + 6y = 10)",
+          "options": {
+            "a": "Le déterminant est nul",
+            "b": "Les droites sont parallèles",
+            "c": "Les droites se coupent en un seul point",
+            "d": "Il n'existe pas de solution"
+          },
+          "correct_letter": "c",
+          "correct_answer": "Les droites se coupent en un seul point",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "Si A est une matrice 2x2, alors le déterminant de A est nul si :",
+          "options": {
+            "a": "A est inversible",
+            "b": "Les colonnes de A sont linéairement indépendantes",
+            "c": "Les lignes de A sont linéairement dépendantes",
+            "d": "Le rang de A est maximal"
+          },
+          "correct_letter": "c",
+          "correct_answer": "Les lignes de A sont linéairement dépendantes",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "Le produit de deux matrices inversibles est :",
+          "options": {
+            "a": "Toujours inversible",
+            "b": "Inversible si et seulement si les matrices sont diagonales",
+            "c": "Non inversible",
+            "d": "Inversible si les matrices sont carrées"
+          },
+          "correct_letter": "a",
+          "correct_answer": "Toujours inversible",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "Le rang d'une matrice correspond à :",
+          "options": {
+            "a": "Le nombre de lignes non nulles",
+            "b": "Le nombre de colonnes",
+            "c": "Le nombre maximal de vecteurs linéairement indépendants",
+            "d": "Le nombre de solutions du système associé"
+          },
+          "correct_letter": "c",
+          "correct_answer": "Le nombre maximal de vecteurs linéairement indépendants",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "Le polynôme caractéristique d'une matrice carrée est :",
+          "options": {
+            "a": "Le déterminant de la matrice",
+            "b": "Le polynôme obtenu en prenant le déterminant de (A - λI)",
+            "c": "Le produit des valeurs propres de la matrice",
+            "d": "Le polynôme dont les racines sont les valeurs propres de A"
+          },
+          "correct_letter": "b",
+          "correct_answer": "Le polynôme obtenu en prenant le déterminant de (A - λI)",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "Une matrice est dite diagonalisable si :",
+          "options": {
+            "a": "Elle a une base de vecteurs propres",
+            "b": "Son déterminant est nul",
+            "c": "Elle est inversible",
+            "d": "Elle est symétrique"
+          },
+          "correct_letter": "a",
+          "correct_answer": "Elle a une base de vecteurs propres",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "Les valeurs propres d'une matrice sont les racines de :",
+          "options": {
+            "a": "Le polynôme caractéristique",
+            "b": "La matrice inversée",
+            "c": "La matrice adjointée",
+            "d": "Le déterminant de la matrice"
+          },
+          "correct_letter": "a",
+          "correct_answer": "Le polynôme caractéristique",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "Le déterminant d'une matrice triangulaire est :",
+          "options": {
+            "a": "La somme des éléments de la diagonale",
+            "b": "Le produit des éléments de la diagonale",
+            "c": "Toujours nul",
+            "d": "Le produit des valeurs propres"
+          },
+          "correct_letter": "b",
+          "correct_answer": "Le produit des éléments de la diagonale",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "Si A est une matrice inversible, alors A^(-1) est :",
+          "options": {
+            "a": "La matrice obtenue en permutant les lignes et colonnes de A",
+            "b": "La transposée de A",
+            "c": "La matrice qui, multipliée par A, donne l'identité",
+            "d": "Le déterminant de A"
+          },
+          "correct_letter": "c",
+          "correct_answer": "La matrice qui, multipliée par A, donne l'identité",
           "points": 3,
           "type": "difficult",
           "hint": "no-hint"
@@ -398,6 +683,156 @@
           "options": ["UPDATE", "MODIFY", "CHANGE", "ALTER"],
           "correct_answer": "UPDATE",
           "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête ?",
+          "options": [
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY",
+            "HAVING"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "WHERE",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "Quelle commande SQL est utilisée pour récupérer des données d'une base de données ?",
+          "options": [
+            "GET",
+            "EXTRACT",
+            "SELECT",
+            "FETCH"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "SELECT",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        { 
+          "nbr": 13,
+          "question": "Quelle commande SQL est utilisée pour supprimer des lignes d'une table ?",
+          "options": [
+            "REMOVE",
+            "DROP",
+            "DELETE",
+            "CLEAR"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "DELETE",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "Quelle fonction SQL est utilisée pour compter le nombre de lignes dans un résultat ?",
+          "options": [
+            "COUNT()",
+            "SUM()",
+            "TOTAL()",
+            "CALCULATE()"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "COUNT()",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "Laquelle des commandes suivantes est utilisée pour modifier une table existante en SQL ?",
+          "options": [
+            "CHANGE TABLE",
+            "MODIFY TABLE",
+            "ALTER TABLE",
+            "UPDATE TABLE"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "ALTER TABLE",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "Quelle clause SQL est utilisée pour regrouper les lignes ayant les mêmes valeurs ?",
+          "options": [
+            "ORDER BY",
+            "GROUP BY",
+            "PARTITION BY",
+            "UNION"
+          ],
+          "correct_letter": "b",
+          "correct_answer": "GROUP BY",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "Quelle clause SQL est utilisée pour trier les résultats d'une requête ?",
+          "options": [
+            "SORT BY",
+            "ORDER BY",
+            "GROUP BY",
+            "ARRANGE BY"
+          ],
+          "correct_letter": "b",
+          "correct_answer": "ORDER BY",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "Quelle commande SQL est utilisée pour créer une nouvelle table ?",
+          "options": [
+            "INSERT INTO",
+            "CREATE TABLE",
+            "ADD TABLE",
+            "NEW TABLE"
+          ],
+          "correct_letter": "b",
+          "correct_answer": "CREATE TABLE",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "Quel mot-clé SQL est utilisé pour éliminer les doublons dans les résultats d'une requête ?",
+          "options": [
+            "DISTINCT",
+            "UNIQUE",
+            "FILTER",
+            "ONLY"
+          ],
+          "correct_letter": "a",
+          "correct_answer": "DISTINCT",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "Quelle commande SQL est utilisée pour ajouter de nouvelles données dans une table ?",
+          "options": [
+            "ADD",
+            "APPEND",
+            "INSERT INTO",
+            "MERGE"
+          ],
+          "correct_letter": "c",
+          "correct_answer": "INSERT INTO",
           "points": 3,
           "type": "difficult",
           "hint": "no-hint"
@@ -1135,12 +1570,709 @@
           "points": 1,
           "type": "easy",
           "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "Which Python exception is raised when you try to access an undefined variable?",
+          "options": ["NameError", "TypeError", "KeyError", "IndexError"],
+          "correct_answer": "NameError",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "What does the 'with' statement help to simplify in Python?",
+          "options": [
+            "String concatenation",
+            "Error handling",
+            "File and resource management",
+            "Looping"
+          ],
+          "correct_answer": "File and resource management",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "What is the purpose of the 'except Exception as e' syntax in Python?",
+          "options": [
+            "To re-raise an exception",
+            "To handle all exceptions and store the exception details in 'e'",
+            "To suppress exceptions",
+            "To log exceptions without handling them"
+          ],
+          "correct_answer": "To handle all exceptions and store the exception details in 'e'",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "What type of error is raised when you try to divide by zero in Python?",
+          "options": [
+            "ZeroDivisionError",
+            "ValueError",
+            "TypeError",
+            "IndexError"
+          ],
+          "correct_answer": "ZeroDivisionError",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "Which of the following statements is used to catch exceptions in Python?",
+          "options": [
+            "if",
+            "except",
+            "for",
+            "when"
+          ],
+          "correct_answer": "except",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "What is the correct way to raise a custom exception in Python?",
+          "options": [
+            "throw CustomException()",
+            "raise CustomException()",
+            "custom_exception()",
+            "raise error CustomException()"
+          ],
+          "correct_answer": "raise CustomException()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
         }
-        
-        
-       
-       
-       
+
+
+      ]
+    },
+    {
+      "subject": "PYTHON",
+      "name": "PythonFileHandling",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is file handling in Python?",
+          "options": [
+            "Managing folders",
+            "Reading and writing file",
+            "Controlling system files",
+            "Handling exceptions in files"
+          ],
+          "correct_answer": "Reading and writing file",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "Which function is used to open a file in Python?",
+          "options": ["open_file()", "read_file()", "file_open()", "open()"],
+          "correct_answer": " open()",
+          "correct_letter": "d",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "Which method is used to read the entire content of a file as a string?",
+          "options": [" read_all()", "read()", " read_full()", "readfile()"],
+          "correct_answer": "read()",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is the purpose of the 'rb' mode in file opening?",
+          "options": [
+            "Read binary",
+            "Replace binary",
+            "Read and backup",
+            "Rename binary"
+          ],
+          "correct_answer": "Read binary",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the purpose of the 'a' mode in file opening?",
+          "options": ["Add", " Append", "Access", "Assign"],
+          "correct_answer": " Append",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 6,
+          "question": "How can you read the first five characters of a file in Python?",
+          "options": [
+            "file.read(5)",
+            "read(file, 5)",
+            " read_first(file, 5)",
+            "file.read_first(5)"
+          ],
+          "correct_answer": "file.read(5)",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 7,
+          "question": "How do you check if a file exists before opening it in Python?",
+          "options": [
+            "check_file_existence()",
+            " file_exists()",
+            " os.path.exists()",
+            "verify_file()"
+          ],
+          "correct_answer": "os.path.exists()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 8,
+          "question": "What is the purpose of the 'with' statement in file handling?",
+          "options": [
+            "It creates a new file",
+            " It automatically closes the file",
+            " It appends data to a file",
+            "It reads the entire file at once"
+          ],
+          "correct_answer": "It automatically closes the file",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 9,
+          "question": "How do you read a file line by line in Python?",
+          "options": [
+            "read_all_lines()",
+            "file.read_line()",
+            "readlines()",
+            "read_line(file)"
+          ],
+          "correct_answer": "readlines()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 10,
+          "question": "How can you write data to a file without overwriting its existing content in Python?",
+          "options": [
+            "file.write_data()",
+            "write_file()",
+            "file.write_append()",
+            "file.write('a')"
+          ],
+          "correct_answer": "file.write_append()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 11,
+          "question": "Which function checks if a file exists?",
+          "options": [
+            "exists_file()",
+            "check_file()",
+            "os.path.exists()",
+            "file_exists()"
+          ],
+          "correct_answer": "os.path.exists()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 12,
+          "question": "How do you check if a file is writable in Python?",
+          "options": [
+            "file.writable()",
+            "os.path.writable()",
+            "os.access(file, os.W_OK)",
+            "file.is_writable()"
+          ],
+          "correct_answer": "os.access(file, os.W_OK)",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 13,
+          "question": "Which method is used to move the cursor to a specific position in a file?",
+          "options": [
+            "file.seek()",
+            "move_cursor()",
+            "cursor_position()",
+            "set_position()"
+          ],
+          "correct_answer": "file.seek()",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 14,
+          "question": "What does the 'a+b' mode stand for in file opening?",
+          "options": [
+            "Append and Binary",
+            "Access and Backup",
+            "Append and Backup",
+            "Access and Binary"
+          ],
+          "correct_answer": "Append and Binary",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 15,
+          "question": "How do you copy the content of one file to another in Python?",
+          "options": [
+            "copy_file()",
+            "file.copy()",
+            "shutil.copyfile()",
+            "copy_to()"
+          ],
+          "correct_answer": "shutil.copyfile()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 16,
+          "question": "Which method is used to return the current position of the file cursor?",
+          "options": [
+            "file.position()",
+            "get_cursor_position()",
+            "file.tell()",
+            "cursor_location()"
+          ],
+          "correct_answer": "file.tell()",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 17,
+          "question": "Which Python module provides high-level file and directory handling operations?",
+          "options": [
+            "os",
+            "sys",
+            "shutil",
+            "fileutil"
+          ],
+          "correct_answer": "shutil",
+          "correct_letter": "c",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 18,
+          "question": "What does the 'w' mode do when opening a file in Python?",
+          "options": [
+            "Writes to a file and deletes existing content",
+            "Writes to a file without deleting content",
+            "Appends content to the file",
+            "Opens the file in read-only mode"
+          ],
+          "correct_answer": "Writes to a file and deletes existing content",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 19,
+          "question": "What is the purpose of the 'encoding' parameter in the open() function?",
+          "options": [
+            "To specify the file format",
+            "To define how the file content is interpreted as text",
+            "To enable binary file handling",
+            "To set file read/write permissions"
+          ],
+          "correct_answer": "To define how the file content is interpreted as text",
+          "correct_letter": "b",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 20,
+          "question": "What is the default mode when opening a file using open() in Python?",
+          "options": [
+            "r",
+            "w",
+            "rb",
+            "a"
+          ],
+          "correct_answer": "r",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "Database",
+      "name": "expertDB",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the purpose of a transaction log in a database?",
+          "options": [
+            "To store temporary data",
+            "To record all changes made to the database",
+            "To optimize query performance",
+            "To back up the database"
+          ],
+          "correct_answer": "To record all changes made to the database",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "Which isolation level ensures that no dirty reads, non-repeatable reads, or phantom reads occur?",
+          "options": [
+            "Read Uncommitted",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+          ],
+          "correct_answer": "Serializable",
+          "correct_letter": "d",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the purpose of a materialized view in a database?",
+          "options": [
+            "To store the result of a query for faster access",
+            "To create a temporary table",
+            "To optimize joins",
+            "To enforce constraints"
+          ],
+          "correct_answer": "To store the result of a query for faster access",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "Which SQL command is used to grant privileges to a user?",
+          "options": [
+            "GRANT",
+            "ALLOW",
+            "PERMIT",
+            "AUTHORIZE"
+          ],
+          "correct_answer": "GRANT",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the purpose of the CASCADE option in a foreign key constraint?",
+          "options": [
+            "To automatically delete related rows in child tables",
+            "To enforce uniqueness",
+            "To optimize query performance",
+            "To create a backup"
+          ],
+          "correct_answer": "To automatically delete related rows in child tables",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "OOP",
+      "name": "intermediateOOP",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the difference between composition and inheritance in OOP?",
+          "options": [
+            "Composition is a 'has-a' relationship, while inheritance is an 'is-a' relationship",
+            "Composition is an 'is-a' relationship, while inheritance is a 'has-a' relationship",
+            "Composition is used for polymorphism, while inheritance is used for encapsulation",
+            "Composition is used for encapsulation, while inheritance is used for polymorphism"
+          ],
+          "correct_answer": "Composition is a 'has-a' relationship, while inheritance is an 'is-a' relationship",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is the purpose of the 'this' keyword in Java?",
+          "options": [
+            "To refer to the current instance of the class",
+            "To refer to the parent class",
+            "To refer to a static method",
+            "To refer to a global variable"
+          ],
+          "correct_answer": "To refer to the current instance of the class",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is method overloading in OOP?",
+          "options": [
+            "Defining multiple methods with the same name but different parameters",
+            "Redefining a method in a subclass",
+            "Creating a method with no parameters",
+            "Using the same method name in different classes"
+          ],
+          "correct_answer": "Defining multiple methods with the same name but different parameters",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is the purpose of the 'final' keyword in Java?",
+          "options": [
+            "To prevent a class from being inherited",
+            "To allow a method to be overridden",
+            "To make a variable mutable",
+            "To create a static method"
+          ],
+          "correct_answer": "To prevent a class from being inherited",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the difference between an abstract class and an interface in Java?",
+          "options": [
+            "An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods",
+            "An interface can have both abstract and concrete methods, while an abstract class can only have abstract methods",
+            "An abstract class is used for polymorphism, while an interface is used for inheritance",
+            "An interface is used for polymorphism, while an abstract class is used for inheritance"
+          ],
+          "correct_answer": "An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "Computer Science",
+      "name": "CSFundamentals",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the time complexity of a binary search algorithm?",
+          "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+          ],
+          "correct_answer": "O(log n)",
+          "correct_letter": "b",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is the purpose of a hash function in data structures?",
+          "options": [
+            "To map data of arbitrary size to fixed-size values",
+            "To sort data in ascending order",
+            "To encrypt data",
+            "To compress data"
+          ],
+          "correct_answer": "To map data of arbitrary size to fixed-size values",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the difference between a stack and a queue?",
+          "options": [
+            "A stack is LIFO, while a queue is FIFO",
+            "A stack is FIFO, while a queue is LIFO",
+            "A stack is used for sorting, while a queue is used for searching",
+            "A stack is used for searching, while a queue is used for sorting"
+          ],
+          "correct_answer": "A stack is LIFO, while a queue is FIFO",
+          "correct_letter": "a",
+          "points": 1,
+          "type": "easy",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is the purpose of a binary tree in data structures?",
+          "options": [
+            "To store hierarchical data",
+            "To sort data in linear time",
+            "To encrypt data",
+            "To compress data"
+          ],
+          "correct_answer": "To store hierarchical data",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the worst-case time complexity of quicksort?",
+          "options": [
+            "O(n log n)",
+            "O(n^2)",
+            "O(n)",
+            "O(log n)"
+          ],
+          "correct_answer": "O(n^2)",
+          "correct_letter": "b",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
+      ]
+    },
+    {
+      "subject": "Computer Science",
+      "name": "AdvancedCS",
+      "questions": [
+        {
+          "nbr": 1,
+          "question": "What is the purpose of dynamic programming in algorithms?",
+          "options": [
+            "To solve problems by breaking them into smaller subproblems",
+            "To sort data in linear time",
+            "To encrypt data",
+            "To compress data"
+          ],
+          "correct_answer": "To solve problems by breaking them into smaller subproblems",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 2,
+          "question": "What is the time complexity of the Floyd-Warshall algorithm?",
+          "options": [
+            "O(n^2)",
+            "O(n^3)",
+            "O(n log n)",
+            "O(n)"
+          ],
+          "correct_answer": "O(n^3)",
+          "correct_letter": "b",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 3,
+          "question": "What is the purpose of the A* algorithm?",
+          "options": [
+            "To find the shortest path in a graph",
+            "To sort data in linear time",
+            "To encrypt data",
+            "To compress data"
+          ],
+          "correct_answer": "To find the shortest path in a graph",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 4,
+          "question": "What is the difference between BFS and DFS?",
+          "options": [
+            "BFS uses a queue, while DFS uses a stack",
+            "BFS uses a stack, while DFS uses a queue",
+            "BFS is used for sorting, while DFS is used for searching",
+            "BFS is used for searching, while DFS is used for sorting"
+          ],
+          "correct_answer": "BFS uses a queue, while DFS uses a stack",
+          "correct_letter": "a",
+          "points": 2,
+          "type": "medium",
+          "hint": "no-hint"
+        },
+        {
+          "nbr": 5,
+          "question": "What is the purpose of the Dijkstra algorithm?",
+          "options": [
+            "To find the shortest path in a weighted graph",
+            "To sort data in linear time",
+            "To encrypt data",
+            "To compress data"
+          ],
+          "correct_answer": "To find the shortest path in a weighted graph",
+          "correct_letter": "a",
+          "points": 3,
+          "type": "difficult",
+          "hint": "no-hint"
+        }
       ]
     }
   ]
