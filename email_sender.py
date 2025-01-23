@@ -4,6 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 from rich.console import Console
+from time import sleep
 import json
 import personal_data_email as pde
 
@@ -263,7 +264,7 @@ def send_email(username , jsonfile):
                 <!--[if !mso]>-->
                 <td class="t46" style="width:400px;">
                 <!--<![endif]-->
-                <table class="t45" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;"><tr><td class="t44"><p class="t43" style="margin:0;Margin:0;font-family:Albert Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:500;font-style:normal;font-size:12px;text-decoration:none;text-transform:none;direction:ltr;color:#888888;text-align:center;mso-line-height-rule:exactly;mso-text-raise:3px;">05000, Batna, Batna,Algeria</p></td></tr></table>
+                <table class="t45" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;"><tr><td class="t44"><p class="t43" style="margin:0;Margin:0;font-family:Albert Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:500;font-style:normal;font-size:12px;text-decoration:none;text-transform:none;direction:ltr;color:#888888;text-align:center;mso-line-height-rule:exactly;mso-text-raise:3px;">ALL RIGHTS RESERVED FOR ILYES SLM</p></td></tr></table>
                 </td></tr></table>
                 </td></tr></table></td></tr></table>
                 </td></tr></table>
@@ -295,19 +296,19 @@ def send_email(username , jsonfile):
     # Cast as string
     text = msg.as_string()
     # Connect with the server
-    print("Connecting to server...")
-    server = smtplib.SMTP(smtp_server, smtp_port)
-    server.starttls()
-    server.login(email_from, pswd)
+    with console.status("[bold green]Connecting to server...") as status:
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()
+        server.login(email_from, pswd)
     console.print("[bold green]Succesfully connected to server[/bold green]")
     print()
-    print(f"Sending email to: {email_to}...")
-    server.sendmail(email_from, email_to, text)
-    print(f"[bold green]Email sent to: {email_to}[/bold green]")
+    with console.status(f"[bold green]Sending email to: {email_to}...") as status:
+        server.sendmail(email_from, email_to, text)
+        sleep(1.5)
+    console.print(f"[bold green]Email sent to: {email_to}[/bold green]")
     print()
     # Close the port
     server.quit()
 
 # Usage example 
 #send_email(username, "file1.json")
-
