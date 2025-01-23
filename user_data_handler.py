@@ -141,6 +141,7 @@ def Save_history_in_users_os(history):
     # Initialize the Tkinter root window
     root = Tk()
     root.withdraw()  # Hide the root window
+    root.attributes("-topmost", True)  # Raise the root window to the top
 
     # Open a "Save As" dialog to let the user choose the folder and file name
     file_path = asksaveasfilename(
@@ -218,12 +219,6 @@ def modify_user_infos(username):
                 else:
                     console.print("[red]Invalid choice![/red]")
     
-
-
-
-
-
-
 
 
 
