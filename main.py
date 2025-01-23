@@ -17,13 +17,15 @@ print("\n")
 
 username = udh.login()
 udh.welcome(username)
+print("\n")
 
 if username:
     while True:
         console.print("[bold cyan]1. Take an exam[/bold cyan]")
         console.print("[bold cyan]2. View exam history[/bold cyan]")
-        console.print("[bold cyan]3. Save exam history[/bold cyan]")
-        console.print("[bold cyan]4. Logout[/bold cyan]")
+        console.print("[bold cyan]3. download exam history[/bold cyan]")
+        console.print("[bold cyan]4. modify user infos[/bold cyan]")
+        console.print("[bold cyan]5. Logout[/bold cyan]")
         choice = input("Enter your choice: ")
         if choice == '1':
             subject = qcm.choose_subject()
@@ -64,6 +66,8 @@ if username:
                     else:
                         console.print("No results found!" , style="bold red")
         elif choice == '4':
+            udh.modify_user_infos(username)
+        elif choice == '5':
             console.print("Logging out...", style="bold red")
             while True:
                 exit_choice = Prompt.ask("Do you want to exit the app? (yes/no)")
