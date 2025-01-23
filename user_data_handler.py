@@ -167,10 +167,10 @@ def modify_user_infos(username):
     for user in users['users']:
         if user['username'] == username:
             while True:
-                console.print("[bold cyan]1. Change username[/bold cyan]")
-                console.print("[bold cyan]2. Change password[/bold cyan]")
-                console.print("[bold cyan]3. change email[/bold cyan]")
-                console.print("[bold cyan]4. Cancel[/bold cyan]")
+                console.print("[bold cyan]1.     Change username[/bold cyan]")
+                console.print("[bold cyan]2.     Change password[/bold cyan]")
+                console.print("[bold cyan]3.     change email[/bold cyan]")
+                console.print("[bold cyan]4.     Cancel[/bold cyan]")
                 choice = Prompt.ask("[bold cyan]Enter your choice[/bold cyan]")
                 if choice == '1':
                     while True:
@@ -180,8 +180,7 @@ def modify_user_infos(username):
                         else:    
                             user['username'] = new_username
                             break
-                        
-                    save_users(users)
+                    
                     console.print("[bold green]Username changed successfully![/bold green]")
                 elif choice == '2':
                     while True:
@@ -206,6 +205,8 @@ def modify_user_infos(username):
                                 console.print("[red]Email already exists![/red]")
                             else:
                                 user['email'] = new_email
+                                save_users(users)
+                                console.print("[bold green]Email changed successfully![/bold green]")
                                 break
                         else:
                             console.print("[red]Invalid email address![/red]")
