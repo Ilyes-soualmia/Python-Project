@@ -7,6 +7,7 @@ import os
 import qcm_handler as qcm
 import user_data_handler as udh
 import email_sender as es
+import Score_to_exam_analysis as sea
 
 data = qcm.load_data()
 
@@ -25,6 +26,8 @@ if username:
         console.print("[bold cyan]2. View exam history[/bold cyan]")
         console.print("[bold cyan]3. download exam history[/bold cyan]")
         console.print("[bold cyan]4. modify user infos[/bold cyan]")
+        if username == "admin":
+            console.print("[bold cyan]A. Exam History analysis[/bold cyan]")
         console.print("[bold cyan]5. Logout[/bold cyan]")
         choice = input("Enter your choice: ")
         if choice == '1':
@@ -82,6 +85,8 @@ if username:
                     console.print("Invalid choice. Please try again.", style="bold red") #aaaaaaah it's not that hard , just yes or no 
             if exit_choice == "yes":
                 break  
+        elif choice == 'A' and username == "admin":
+            sea.score_to_exam_analysis()
         else:
             console.print("Invalid choice. Please try again.", style="bold red") 
         
