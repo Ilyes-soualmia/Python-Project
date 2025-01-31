@@ -393,8 +393,8 @@
         {
           "nbr": 10,
           "question": "Calculate the matrix product of A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 2]].",
-          "options": [["4, 4"], ["7, 8"], ["8, 8"], ["5, 4"]],
-          "correct_answer": [["4, 4"], ["7, 8"]],
+          "options": ["[4, 4]", "[7, 8]", "[8, 8]", "[5, 4]"],
+          "correct_answer": ["[4, 4]", "[7, 8]"],
           "correct_letter": "a",
           "points": 3,
           "type": "difficult",
@@ -413,12 +413,12 @@
         {
           "nbr": 12,
           "question": "Le système d'équations suivant a une solution unique si et seulement si : (2x + 3y = 5, 4x + 6y = 10)",
-          "options": {
-            "a": "Le déterminant est nul",
-            "b": "Les droites sont parallèles",
-            "c": "Les droites se coupent en un seul point",
-            "d": "Il n'existe pas de solution"
-          },
+          "options": [
+            "Le déterminant est nul",
+            "Les droites sont parallèles",
+            "Les droites se coupent en un seul point",
+            "Il n'existe pas de solution"
+          ],
           "correct_letter": "c",
           "correct_answer": "Les droites se coupent en un seul point",
           "points": 3,
@@ -428,12 +428,12 @@
         {
           "nbr": 13,
           "question": "Si A est une matrice 2x2, alors le déterminant de A est nul si :",
-          "options": {
-            "a": "A est inversible",
-            "b": "Les colonnes de A sont linéairement indépendantes",
-            "c": "Les lignes de A sont linéairement dépendantes",
-            "d": "Le rang de A est maximal"
-          },
+          "options": [
+            "A est inversible",
+            "Les colonnes de A sont linéairement indépendantes",
+            "Les lignes de A sont linéairement dépendantes",
+            "Le rang de A est maximal"
+          ],
           "correct_letter": "c",
           "correct_answer": "Les lignes de A sont linéairement dépendantes",
           "points": 3,
@@ -443,12 +443,12 @@
         {
           "nbr": 14,
           "question": "Le produit de deux matrices inversibles est :",
-          "options": {
-            "a": "Toujours inversible",
-            "b": "Inversible si et seulement si les matrices sont diagonales",
-            "c": "Non inversible",
-            "d": "Inversible si les matrices sont carrées"
-          },
+          "options": [
+            "Toujours inversible",
+            "Inversible si et seulement si les matrices sont diagonales",
+            "Non inversible",
+            "Inversible si les matrices sont carrées"
+          ],
           "correct_letter": "a",
           "correct_answer": "Toujours inversible",
           "points": 3,
@@ -458,12 +458,12 @@
         {
           "nbr": 15,
           "question": "Le rang d'une matrice correspond à :",
-          "options": {
-            "a": "Le nombre de lignes non nulles",
-            "b": "Le nombre de colonnes",
-            "c": "Le nombre maximal de vecteurs linéairement indépendants",
-            "d": "Le nombre de solutions du système associé"
-          },
+          "options": [
+            "Le nombre de lignes non nulles",
+            "Le nombre de colonnes",
+            "Le nombre maximal de vecteurs linéairement indépendants",
+            "Le nombre de solutions du système associé"
+          ],
           "correct_letter": "c",
           "correct_answer": "Le nombre maximal de vecteurs linéairement indépendants",
           "points": 3,
@@ -473,12 +473,12 @@
         {
           "nbr": 16,
           "question": "Le polynôme caractéristique d'une matrice carrée est :",
-          "options": {
-            "a": "Le déterminant de la matrice",
-            "b": "Le polynôme obtenu en prenant le déterminant de (A - λI)",
-            "c": "Le produit des valeurs propres de la matrice",
-            "d": "Le polynôme dont les racines sont les valeurs propres de A"
-          },
+          "options": [
+            "Le déterminant de la matrice",
+            "Le polynôme obtenu en prenant le déterminant de (A - λI)",
+            "Le produit des valeurs propres de la matrice",
+            "Le polynôme dont les racines sont les valeurs propres de A"
+          ],
           "correct_letter": "b",
           "correct_answer": "Le polynôme obtenu en prenant le déterminant de (A - λI)",
           "points": 3,
@@ -488,12 +488,12 @@
         {
           "nbr": 17,
           "question": "Une matrice est dite diagonalisable si :",
-          "options": {
-            "a": "Elle a une base de vecteurs propres",
-            "b": "Son déterminant est nul",
-            "c": "Elle est inversible",
-            "d": "Elle est symétrique"
-          },
+          "options": [
+            "Elle a une base de vecteurs propres",
+            "Son déterminant est nul",
+            "Elle est inversible",
+            "Elle est symétrique"
+          ],
           "correct_letter": "a",
           "correct_answer": "Elle a une base de vecteurs propres",
           "points": 3,
@@ -503,12 +503,12 @@
         {
           "nbr": 18,
           "question": "Les valeurs propres d'une matrice sont les racines de :",
-          "options": {
-            "a": "Le polynôme caractéristique",
-            "b": "La matrice inversée",
-            "c": "La matrice adjointée",
-            "d": "Le déterminant de la matrice"
-          },
+          "options": [
+            "Le polynôme caractéristique",
+            "La matrice inversée",
+            "La matrice adjointée",
+            "Le déterminant de la matrice"
+          ],
           "correct_letter": "a",
           "correct_answer": "Le polynôme caractéristique",
           "points": 3,
@@ -518,27 +518,27 @@
         {
           "nbr": 19,
           "question": "Le déterminant d'une matrice triangulaire est :",
-          "options": {
-            "a": "La somme des éléments de la diagonale",
-            "b": "Le produit des éléments de la diagonale",
-            "c": "Toujours nul",
-            "d": "Le produit des valeurs propres"
-          },
+          "options": [
+            "La somme des éléments de la diagonale",
+            "Le produit des éléments de la diagonale",
+            "Toujours nul",
+            "Le produit des valeurs propres"
+          ],
           "correct_letter": "b",
           "correct_answer": "Le produit des éléments de la diagonale",
           "points": 3,
           "type": "difficult",
           "hint": "no-hint"
-        },
+          },
         {
           "nbr": 20,
           "question": "Si A est une matrice inversible, alors A^(-1) est :",
-          "options": {
-            "a": "La matrice obtenue en permutant les lignes et colonnes de A",
-            "b": "La transposée de A",
-            "c": "La matrice qui, multipliée par A, donne l'identité",
-            "d": "Le déterminant de A"
-          },
+          "options": [
+            "La matrice obtenue en permutant les lignes et colonnes de A",
+            "La transposée de A",
+            "La matrice qui, multipliée par A, donne l'identité",
+            "Le déterminant de A"
+          ],
           "correct_letter": "c",
           "correct_answer": "La matrice qui, multipliée par A, donne l'identité",
           "points": 3,
